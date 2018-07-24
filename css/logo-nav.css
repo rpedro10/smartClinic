@@ -13,3 +13,21 @@ body {
     padding-top: 56px;
   }
 }
+
+#navbar { 
+  background-color:#ffd43f;
+}
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 250px;
+  width: 400px;
+  position: absolute;
+}
