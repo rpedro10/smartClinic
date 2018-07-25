@@ -99,24 +99,45 @@
               <div class="jumbotron" id="clinic-list">
                 <h4 class="display-5">Encontre a SmartClinic mais perto de si </h4>
                 <p class="lead">placeholder text </p>
-                <div class="form-group col-md-4">
-                  <form>
-                      <label for="inputState">Escolha</label>
-                      <select id="inputState" class="form-control">
+                  
+                  <form id="form-select-clinic">
+                      <label for="form-select-clinic">Escolha</label>
+                      <select id="form-select-clinic" class="form-control">
                         <option selected>Lisboa</option>
+                        <option>Porto</option>
+                        <option >Braga</option>
                         <option>...</option>
                       </select>
-                    </form>
-              </div>
+                    </form><!--
+                    <p class="lead">Resultados </p>
+                    
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-contacts">
+                          <a class="nav-link" href="#"><h5 id="contacts">Clinica Ferreira Borges</h5></a>
+                        </li>
+                        <li class="nav-becoming">
+                          <a class="nav-link" href="#"><h5 id="become">Clinica X</h5></a>
+                        </li>
+                      </ul>
+                      ou-->
+                    <form id="form-select-clinic">
+                        <label for="form-select-clinic">Resultados</label>
+                        <select id="form-select-clinic" class="form-control">
+                          <option selected>Clinica Ferreira Borges</option>
+                        </select>
+                      </form>
+                    
               </div>
             </div>
             <div class="col-12 col-xl-6">
                 <div class="map-responsive">
-                    <iframe width="500" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=R.%20Ferreira%20Borges%20173C%2C%201350-130%20Lisboa&key=AIzaSyCjFIie_iXfbYdvoKeSdr3KXKNIqmjRrbg" allowfullscreen></iframe>
+                    <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=R.%20Ferreira%20Borges%20173C%2C%201350-130%20Lisboa&key=AIzaSyCjFIie_iXfbYdvoKeSdr3KXKNIqmjRrbg" allowfullscreen></iframe>
                   </div>  
              <!--     <div class="mapouter"><div class="gmap_canvas"><iframe width="700" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Rua%20Ferreira%20Borges%2C%20173C%20Lisboa&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">crocothemes.net</a></div><style>.mapouter{text-align:right;height:500px;width:700px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:700px;}</style></div>          </div>
-                -->
+                --> 
                 </div>
+                   <!--    <img src="./img/mapa.png" width="800" height="600" alt=""> -->
+
               </div>
               
         <hr class="my-4">
@@ -125,8 +146,7 @@
 <footer class="page-footer font-small blue pt-4" style="margin-top:2em">
   <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2018 Copyright: 
-            <a         href="https://brightdigital.pt/"        >BRIGHT</a>
-            
+            <a href="https://brightdigital.pt/">BRIGHT</a>
         </div>
         
         <!-- Copyright -->
