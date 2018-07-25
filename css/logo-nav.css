@@ -21,6 +21,10 @@ body {
   color:white;
   
 }
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 #navbar { 
   background-color:#ffd43f;
@@ -70,7 +74,7 @@ box-shadow: 10px 5px rgb(59, 59, 59);
 
 
 #info{
-  padding: 10px;
+  padding: 5px;
  border-bottom: 5px solid rgb(138, 130, 130); 
  background-color:rgb(235, 226, 226);
   }
@@ -85,7 +89,7 @@ box-shadow: 10px 5px rgb(59, 59, 59);
 
 
 
-  /***/
+  /**
 .map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
@@ -98,7 +102,7 @@ box-shadow: 10px 5px rgb(59, 59, 59);
 .map-responsive iframe {
   left: 0;
   top: 0;
-  height: 250px;
-  width: 400px;
+  height: 6000px;
+  width: 600px;
   position: absolute;
-}
+}*/
