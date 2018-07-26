@@ -81,6 +81,10 @@ color:rgb(59, 59, 59);
 }
 #btn_find{
   width:100%;
+  /*
+  color: black;
+  background-color: rgb(224, 224, 224);*/
+
 }
 .btn-primary{
 background-color: #ffd43f;
@@ -104,11 +108,22 @@ box-shadow: 10px 5px rgb(59, 59, 59);
 
   #clinic-list{
     background-color: #ffd43f;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+    
   }
 
-#btns_jumbotron{
-padding-top: 0px;
-
+#call,#appointment{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 32px 16px;
+  width:100%;
+  background-color: rgb(59, 59, 59);
 }
 
 
