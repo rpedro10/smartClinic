@@ -50,17 +50,27 @@ div {
   padding:5px;
   color:red;
 }*/
-
+#column1 {
+padding-right: 0px;
+}
+#column2 {
+  padding-left: 0px;
+  }
 #nav-login{
   background-color:rgb(59, 59, 59);
   border-color: rgb(59, 59, 59);
   padding: 16px;
   color:white;
-  box-shadow: 0px 10px rgb(59, 59, 59);
   
 }
 #more{
 color:rgb(59, 59, 59);
+}
+#btn_find{
+  width:100%;
+
+
+
 }
 .btn-primary{
 background-color: #ffd43f;
