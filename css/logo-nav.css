@@ -31,7 +31,7 @@ div {
 
 #navbar { 
   background-color:#ffd43f;
-  padding: 0;
+  padding: 0px;
   
 }
 #navbarResponsive{
@@ -44,17 +44,30 @@ div {
   /*box-shadow: 0px 10px rgb(59, 59, 59);*/
   
 }
-/*.nav-login{
+.nav-login{
   background-color:rgb(59, 59, 59);
   border-color: rgb(59, 59, 59);
-  padding:5px;
-  color:red;
-}*/
+  padding:7px;
+}
+
+
+#info {
+  background-image: url("../img/dentista.jpg");
+  background-color: #17234E;
+  margin-bottom: 0;
+  min-height: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
 #column1 {
 padding-right: 0px;
 }
 #column2 {
   padding-left: 0px;
+  padding-bottom: 0px;
   }
 #nav-login{
   background-color:rgb(59, 59, 59);
@@ -68,9 +81,6 @@ color:rgb(59, 59, 59);
 }
 #btn_find{
   width:100%;
-
-
-
 }
 .btn-primary{
 background-color: #ffd43f;
@@ -96,7 +106,10 @@ box-shadow: 10px 5px rgb(59, 59, 59);
     background-color: #ffd43f;
   }
 
+#btns_jumbotron{
+padding-top: 0px;
 
+}
 
 
 
@@ -115,7 +128,7 @@ box-shadow: 10px 5px rgb(59, 59, 59);
 .map-responsive iframe {
   left: 0;
   top: 0;
-  height: 6000px;
+  height: 600px;
   width: 600px;
   position: absolute;
 }*/
