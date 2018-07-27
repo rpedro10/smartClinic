@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/logo-nav.css" rel="stylesheet">
+
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+  </head>
+
+  <body>
+
+        <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top">
+            <div class="container">
+              <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                  <h2>SMART<span>CLINIC</span></h2>
+               <!-- <img src="http://placehold.it/300x60?text=Logo" width="150" height="30" alt=""> -->
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-contacts">
+                    <a class="nav-link" href="#"><h5 id="contacts">Contactos</h5></a>
+                  </li>
+                  <li class="nav-becoming">
+                    <a class="nav-link" href="#"><h5 id="become">Torne-se SmartClinic</h5></a>
+                  </li><!--
+                  <li class="nav-login">
+                    <a class="nav-link" href="#" >
+                      <i class="fas fa-sign-in-alt fa-fw"></i> Login </a>                
+                  </li>
+                -->          
+                </ul>
+                   
+              </div>
+                 
+            </div>
+            
+            <a class="nav-link" id="nav-login" href="#" >
+                <i class="fas fa-sign-in-alt fa-fw"></i> Login </a>   
+          </nav>
+       
+        
+        <div class="jumbotron container" id="jumbotron_login" style="margin-top:3em">
+          <h3 class="title">Login</h3> 
+          <hr>
+              <form method="POST" action="">                 
+                  <label for="username">Username</label>
+                  <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="username">
+                              <i class="fas fa-user fa-fw"></i>
+                            </span>
+                          </div>
+                          <input id="username" type="text" name="username" class="form-control" placeholder="Username" required autofocus>
+             
+                        </div>
+                        
+        
+                    <label for="password" >Password</label>
+                  <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="password">
+                              <i class="fas fa-lock fa-fw"></i>
+                            </span>
+                          </div>
+                          <input id="password" type="password" name="password" class="form-control" placeholder="Password" required>
+        
+                        </div>
+                      
+        
+                        <label>
+                          <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+                        </label>
+        
+                        
+        
+                        <hr>
+        
+                        <button type="submit" class="btn btn-block btn-success mb-2">Login</button>
+        
+                      </div>
+        
+              </form>
+        </div>
+        <!--
+        @if ($errors->any())
+                <div class="myAlert-bottom alert alert-danger" id="alert">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                   @foreach ($errors->all() as $error)              
+                      <strong>Error!</strong> {{ $error }}
+                      <br>
+                    @endforeach
+                    </div>
+        @endif
+        @endsection
+                -->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
