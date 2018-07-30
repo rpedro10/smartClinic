@@ -114,6 +114,7 @@ box-shadow: 10px 5px rgb(59, 59, 59);
     border-bottom-left-radius: 8px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    padding-bottom: 0px;
     
     
   }
@@ -126,10 +127,16 @@ box-shadow: 10px 5px rgb(59, 59, 59);
   padding: 32px 16px;
   width:100%;
   background-color: rgb(59, 59, 59);
+  box-sizing: 10px 10px;
+
 }
 
 #jumbotron_login{
 width:30%;
+
+}
+#_btns{
+padding-top: 0px;
 
 }
 

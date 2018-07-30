@@ -22,10 +22,13 @@
   var form = document.getElementById("select-clinic");
   console.log(form);
   if(form){
+    let option = form.options[form.selectedIndex].text;
+    console.log(option);      
+    changeMap(option);
     form.addEventListener("change", function() {
       let option = form.options[form.selectedIndex].text;
       console.log(option);      
-          changeMap(option);
+      changeMap(option);
   });
 
 
@@ -39,12 +42,12 @@ clinics.addEventListener("change", function() {
 });*/
 map2="<div class='map-responsive' id='map2'>"+
 
-"<iframe src='https://snazzymaps.com/embed/87379' width='100%' height='496px' style='border:none;'></iframe> "
+"<iframe src='https://snazzymaps.com/embed/87379' width='100%' height='432px' style='border:none;'></iframe> "
 +                 
 "</div>  ";
 map1="<div class='map-responsive' id='map1'>"+
 
-"<iframe src='https://snazzymaps.com/embed/86952' width='100%' height='496px' style='border:none;'></iframe> "
+"<iframe src='https://snazzymaps.com/embed/86952' width='100%' height='432px' style='border:none;'></iframe> "
 +                 
 "</div>  ";
 
