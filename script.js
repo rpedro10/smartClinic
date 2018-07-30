@@ -99,7 +99,7 @@ function myMap() {
     map.setZoom(11);
     map.setCenter(marker.getPosition());
   });
-  google.maps.event.addListener(marker,'click',function() {
+  google.maps.event.addListener(marker2,'click',function() {
     map.setZoom(11);
     map.setCenter(marker2.getPosition());
   });
