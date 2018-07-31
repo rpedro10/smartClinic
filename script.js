@@ -64,6 +64,7 @@ function myMap() {
   var mapProp= {
       center:new google.maps.LatLng(40.2030616,-8.4356745), // centro em coimbra
       zoom:7,
+      mapTypeControl: false,      // para desaparecer a opçao de satelite
       //MAP STYLE
       styles: [
         {
