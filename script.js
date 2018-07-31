@@ -65,8 +65,10 @@ $(document).ready(function(){
   var form = document.getElementById("select-clinic");
   if(form){
     let option = form.options[form.selectedIndex].text;
+    console.log(option);
     form.addEventListener("change", function() {
       let option = form.options[form.selectedIndex].text;
+      console.log(option);
       changeFocus(option);
   });
 
@@ -112,7 +114,7 @@ function myMap() {
 
 function changeFocus(option){
   if(option=='Clinica X'){
-    MAP.setCenter( c2); 
+    MAP.setCenter(c2); 
     MAP.setZoom(9);    
     
   }
@@ -165,6 +167,46 @@ function changeMap(option) {
     }
 }
 function showPosition(position) {
-  window.alert("latitude:"+position.coords.latitude+ "   longitude:"+position.coords.longitude);
+ // window.alert("latitude:"+position.coords.latitude+ "   longitude:"+position.coords.longitude);
   console.log(position.coords);
+
+  getClosestClinic(position);
+}
+
+function getDistance(lat1, lon1, lat2, lon2,unit) {
+	var radlat1 = Math.PI * lat1/180;
+	var radlat2 = Math.PI * lat2/180;
+	var theta = lon1-lon2;
+	var radtheta = Math.PI * theta/180;
+	var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+	if (dist > 1) {
+		dist = 1;
+	}
+	dist = Math.acos(dist);
+	dist = dist * 180/Math.PI;
+  dist = dist * 60 * 1.1515;
+  if (unit=="K") { dist = dist * 1.609344 }
+	if (unit=="N") { dist = dist * 0.8684 }
+
+	return dist;
+}
+
+function getClosestClinic(position){
+
+  var distance1 =getDistance(position.coords.latitude,position.coords.longitude,c1.lat,c1.lng,'K');
+  var distance2=  getDistance(position.coords.latitude,position.coords.longitude,c2.lat,c2.lng,'K');
+  
+  console.log(distance1);
+  console.log(distance2);
+  var option;
+  if(distance1<distance2){
+    option="Clinica Ferreira Borges";
+    changeFocus(option);
+  }
+  else{
+    option="Clinica X";
+    changeFocus(option);
+
+  }
+
 }
