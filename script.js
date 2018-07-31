@@ -1,23 +1,5 @@
 
-  /**
-   
-    $(document).ready(function(){
-    let form = document.getElementById("form-select-clinic");
-    console.log(form);
-    let option = form.options[form.selectedIndex].text;
-    console.log(option);
-
-    if(form.options[form.selectedIndex]){
-
-    }
-
-
-
-    
-    
-  });
-  */
-/**
+ /**
   $(document).ready(function(){
   var form = document.getElementById("select-clinic");
   console.log(form);
@@ -39,16 +21,16 @@
 
 */
 /**
- * 
+ * Coimbra coords:
  * 40.2030616,-8.4356745
- * 
  */
 
- 
 /** 
 clinics.addEventListener("change", function() {
   console.log(clinics.value );
 });*/
+
+/** OLD WAY OF CHANGING MAPS
 map2="<div class='map-responsive' id='map2'>"+
 
 "<iframe id='frame2'src='https://snazzymaps.com/embed/87379' width='100%' height='432px' style='border:none;'></iframe> "
@@ -59,7 +41,7 @@ map1="<div class='map-responsive' id='map1'>"+
 "<iframe id='frame1' src='https://snazzymaps.com/embed/86952' width='100%' height='432px' style='border:none;'></iframe> "
 +                 
 "</div>  ";
-
+*/
 
 $(document).ready(function(){
   var form = document.getElementById("select-clinic");
@@ -82,18 +64,174 @@ function myMap() {
   var mapProp= {
       center:new google.maps.LatLng(40.2030616,-8.4356745), // centro em coimbra
       zoom:7,
+      //MAP STYLE
+      styles: [
+        {
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#f5f5f5"
+            }
+          ]
+        },
+        {
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#616161"
+            }
+          ]
+        },
+        {
+          "elementType": "labels.text.stroke",
+          "stylers": [
+            {
+              "color": "#f5f5f5"
+            }
+          ]
+        },
+        {
+          "featureType": "administrative.land_parcel",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#bdbdbd"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#eeeeee"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#757575"
+            }
+          ]
+        },
+        {
+          "featureType": "poi.park",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#e5e5e5"
+            }
+          ]
+        },
+        {
+          "featureType": "poi.park",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#9e9e9e"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#757575"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#dadada"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#616161"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#9e9e9e"
+            }
+          ]
+        },
+        {
+          "featureType": "transit.line",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#e5e5e5"
+            }
+          ]
+        },
+        {
+          "featureType": "transit.station",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#eeeeee"
+            }
+          ]
+        },
+        {
+          "featureType": "water",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#c9c9c9"
+            }
+          ]
+        },
+        {
+          "featureType": "water",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#9e9e9e"
+            }
+          ]
+        }
+      ],
   };
 
-  var marker = new google.maps.Marker({
-    map: map,
-    draggable: true,
-    animation: google.maps.Animation.DROP,
-    position: {lat: 59.327, lng: 18.067}
-  });
+
 
   var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-  var marker = new google.maps.Marker({position: c1, map: map,    animation: google.maps.Animation.DROP});
-  var marker2 = new google.maps.Marker({position: c2,map: map,animation: google.maps.Animation.DROP});
+  var marker = new google.maps.Marker({position: c1, map: map,    animation: google.maps.Animation.DROP,icon: "./img/pin3.png"});
+  var marker2 = new google.maps.Marker({position: c2,map: map,animation: google.maps.Animation.DROP, icon: "./img/pin3.png"});
 
    // Zoom to 11 when clicking on marker
    google.maps.event.addListener(marker,'click',function() {
@@ -125,12 +263,9 @@ function changeFocus(option){
   }
 }
 /** 
-
+OLD WAY OF CHANGING MAPS
 function changeMap(option) {
-
   var col = document.getElementById("column2");
-  
-
   if(option=='Clinica X'){
     //<iframe src="https://snazzymaps.com/embed/87379" width="100%" height="600px" style="border:none;"></iframe>
     $("#map1").remove();
@@ -139,25 +274,8 @@ function changeMap(option) {
   else{
     $("#map2").remove();
     $("#column2").append(map1);
-    
   }
-  
-  
 }*/
-
-
-/** 
-  function addEventListeners() {
-    
-  clinic = document.querySelectorAll('#form-select-clinic');
-  for (let i = 0; i < clinic.length; i++) {
-    btns_banUser[i].addEventListener('click', function () {
-      currentUser = i;
-      sendBanUserRequest();
-    });
-  }
-}
-  */
   
   function getLocation() {
     if (navigator.geolocation) {
