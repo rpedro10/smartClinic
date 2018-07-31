@@ -48,6 +48,7 @@ $(document).ready(function(){
   if(form){
     let option = form.options[form.selectedIndex].text;
     console.log(option);
+    
     form.addEventListener("change", function() {
       let option = form.options[form.selectedIndex].text;
       console.log(option);
@@ -231,25 +232,45 @@ function myMap() {
 
 
   var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-  var marker = new google.maps.Marker({position: c1, map: map,    animation: google.maps.Animation.DROP,icon: "./img/pin3.png"});
-  var marker2 = new google.maps.Marker({position: c2,map: map,animation: google.maps.Animation.DROP, icon: "./img/pin3.png"});
+  var marker = new google.maps.Marker({position: c1, map: map, title:'CLINICA FERREIRA BORGES',
+       animation: google.maps.Animation.DROP,icon: "./img/pin3.png"});
+  var marker2 = new google.maps.Marker({position: c2,map: map,title:'CLINICA X-PORTO',
+    animation: google.maps.Animation.DROP, icon: "./img/pin3.png"});
 
+/**  TO show INFO WINDOW
+    var contentString = '<div id="content">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<h6 id="firstHeading" class="firstHeading">Clinica Ferreira Borges </h6>'+
+    '<div id="bodyContent">'+
+    '<p>'+
+    ' MEDICINA DENTARIA  -->'+
+    'RUA FERREIRA BORGES 113C ,1234-130 LISBOA '+
+    '</p>'
+    '</div>'+
+    '</div>';
+  
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString
+    });
+*/
    // Zoom to 11 when clicking on marker
    google.maps.event.addListener(marker,'click',function() {
     map.setZoom(15);
     map.setCenter(marker.getPosition());
+   // infowindow.open(map, marker);
+    
   });
   google.maps.event.addListener(marker2,'click',function() {
     map.setZoom(15);
     map.setCenter(marker2.getPosition());
+   // infowindow.open(map, marker2);
+    
   });
 
   MAP=map;
   
   }
-
- 
-
 
 function changeFocus(option){
   if(option=='Clinica X'){
@@ -288,7 +309,6 @@ function changeMap(option) {
 function showPosition(position) {
  // window.alert("latitude:"+position.coords.latitude+ "   longitude:"+position.coords.longitude);
   console.log(position.coords);
-
   getClosestClinic(position);
 }
 

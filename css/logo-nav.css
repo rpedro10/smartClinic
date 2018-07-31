@@ -61,15 +61,21 @@ div {
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
+  padding: 5px;
+  border-bottom: 5px solid rgb(138, 130, 130); 
 }
 
 #column1 {
 padding-right: 0px;
 }
+
 #column2 {
   padding-left: 0px;
   padding-bottom: 0px;
+  background-color: white;
+  
   }
+  
 #nav-login{
   background-color:rgb(59, 59, 59);
   border-color: rgb(59, 59, 59);
@@ -101,45 +107,45 @@ box-shadow: 10px 5px rgb(59, 59, 59);
 }
 
 
-
-
-#info{
-  padding: 5px;
- border-bottom: 5px solid rgb(138, 130, 130); 
- background-color:rgb(235, 226, 226);
-  }
-
   #clinic-list{
     background-color: #ffd43f;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    padding-bottom: 0px;
+    /*padding-bottom: 0px;*/
   }
 
-
-  #column2{
-  
-    padding-bottom: 0px;
-    padding-right: 0px;
-  }
   #googleMap{
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-   
-
   }
+
+  /********/
+#btns_row{
+padding-top: 0px;
+background-color: white;  
+/*border-top-left-radius: -8px;*/
+
+
+}
+#info_row{
+  background-color: #ffd43f;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+/******/
+
+
 
 #call,#appointment{
   border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
   border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  padding: 32px 16px;
+  
+  padding: 32px 16px; 
   width:100%;
-  background-color: rgb(59, 59, 59);
-
+  background-color: rgb(59, 59, 59);  
+  align-content: center;
 }
 
 #jumbotron_login{
