@@ -78,7 +78,7 @@ var c1 = {lat: 38.7200324, lng: -9.1664412};  //ferreira borges
 var c2 = {lat: 41.1484633, lng: -8.6134978};  // clinica X-porto
 function myMap() {
   var mapProp= {
-      center:new google.maps.LatLng(38.7200324,-9.1664412), // centro na clinica ferreira borges
+      center:new google.maps.LatLng(40.2030616,-8.4356745), // centro em coimbra
       zoom:7,
   };
 
@@ -92,18 +92,18 @@ function myMap() {
   var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
   var marker = new google.maps.Marker({position: c1, map: map,    animation: google.maps.Animation.DROP});
   var marker2 = new google.maps.Marker({position: c2,map: map,animation: google.maps.Animation.DROP});
-  MAP=map;
 
    // Zoom to 11 when clicking on marker
    google.maps.event.addListener(marker,'click',function() {
-    map.setZoom(11);
+    map.setZoom(15);
     map.setCenter(marker.getPosition());
   });
   google.maps.event.addListener(marker2,'click',function() {
-    map.setZoom(11);
+    map.setZoom(15);
     map.setCenter(marker2.getPosition());
   });
 
+  MAP=map;
   
   }
 
@@ -156,3 +156,15 @@ function changeMap(option) {
   }
 }
   */
+  
+  function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+  window.alert("latitude:"+position.coords.latitude+ "   longitude:"+position.coords.longitude);
+  console.log(position.coords);
+}
