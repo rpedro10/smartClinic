@@ -31,7 +31,7 @@ div {
 
 #navbar { 
   background-color:#ffd43f;
-  padding: 0px;
+    padding: 0px;
   
 }
 #navbarResponsive{
@@ -39,16 +39,17 @@ div {
   color:rgb(59, 59, 59);
 }
 
-.sticky-logo h2 span {
+.navbar-brand h2 span {
   color:rgb(59, 59, 59);
   /*box-shadow: 0px 10px rgb(59, 59, 59);*/
   
 }
-.nav-login{
-  background-color:rgb(59, 59, 59);
-  border-color: rgb(59, 59, 59);
-  padding:7px;
+.navbar-brand h2  {
+  padding-left: 40px;
+  /*box-shadow: 0px 10px rgb(59, 59, 59);*/
+  
 }
+
 
 
 #info {
@@ -115,8 +116,19 @@ box-shadow: 10px 5px rgb(59, 59, 59);
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     padding-bottom: 0px;
-    
-    
+  }
+
+
+  #column2{
+  
+    padding-bottom: 0px;
+    padding-right: 0px;
+  }
+  #googleMap{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+   
+
   }
 
 #call,#appointment{

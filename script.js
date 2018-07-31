@@ -174,6 +174,7 @@ function showPosition(position) {
 }
 
 function getDistance(lat1, lon1, lat2, lon2,unit) {
+  //https://www.geodatasource.com/developers/javascript
 	var radlat1 = Math.PI * lat1/180;
 	var radlat2 = Math.PI * lat2/180;
 	var theta = lon1-lon2;
