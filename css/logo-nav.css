@@ -6,7 +6,6 @@
 
 body {
   padding-top: 54px;
-
   text-align: justify;
   text-justify: inter-word;
    /* font-family: DejaVu Sans Mono, monospace;*/
@@ -18,16 +17,17 @@ body {
     padding-top: 56px;
   }
 }
+
 #network,#become,#vision{
   color:rgb(59, 59, 59);
-  font-size: medium;
+  font-size: small;
+  font-weight: bold;
 }
+
 #vision:hover,#become:hover,#network:hover{
   color:white;
   
-}/**
-div {
-}*/
+}
 
 #navbar { 
   background-color:#ffd43f;
@@ -36,11 +36,6 @@ div {
 }
 
 
-.navbar-brand h2 span {
-  color:rgb(59, 59, 59);
-  /*box-shadow: 0px 10px rgb(59, 59, 59);*/
-  
-}
 .navbar-brand  {
   padding-left: 40px;
   /*box-shadow: 0px 10px rgb(59, 59, 59);*/
@@ -79,12 +74,11 @@ padding-right: 0px;
   border-color: rgb(59, 59, 59);
   padding: 16px;
   color:white;
-  font-size: medium;  
+  font-size: small;  
   
 }
 #more{
 color:rgb(59, 59, 59);
-
 }
 #btn_find{
   width:100%;
@@ -170,24 +164,4 @@ padding-top: 0px;
   
 }
 
-  
-
-
-
-  /**
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-}
-
-
-
-.map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 600px;
-  width: 600px;
-  position: absolute;
-}*/
+ 
