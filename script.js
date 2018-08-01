@@ -42,8 +42,9 @@ map1="<div class='map-responsive' id='map1'>"+
 +                 
 "</div>  ";
 */
+$(document).ready(function(){ //scroll in the homepage
+  // from: https://www.w3schools.com/bootstrap/bootstrap_ref_js_scrollspy.asp
 
-$(document).ready(function(){
   // Add scrollspy to <body>
   $('body').scrollspy({target: ".navbar", offset: 50});   
 
@@ -264,14 +265,14 @@ function myMap() {
   var marker2 = new google.maps.Marker({position: c2,map: map,title:'CLINICA X-PORTO',
     animation: google.maps.Animation.DROP, icon: "./img/pin3.png"});
 
-/**  TO show INFO WINDOW
+  //TO show INFO WINDOW about the clinic
     var contentString = '<div id="content">'+
     '<div id="siteNotice">'+
     '</div>'+
     '<h6 id="firstHeading" class="firstHeading">Clinica Ferreira Borges </h6>'+
     '<div id="bodyContent">'+
     '<p>'+
-    ' MEDICINA DENTARIA  -->'+
+    ' Nºde telefone:91254444 '+ '<br>'+
     'RUA FERREIRA BORGES 113C ,1234-130 LISBOA '+
     '</p>'
     '</div>'+
@@ -280,14 +281,14 @@ function myMap() {
     var infowindow = new google.maps.InfoWindow({
       content: contentString
     });
-*/
+
    // Zoom to 11 when clicking on marker
    google.maps.event.addListener(marker,'click',function() {
     map.setZoom(15);
     map.setCenter(marker.getPosition());
-   // infowindow.open(map, marker);
-    
+    infowindow.open(map, marker);
   });
+
   google.maps.event.addListener(marker2,'click',function() {
     map.setZoom(15);
     map.setCenter(marker2.getPosition());
@@ -303,12 +304,10 @@ function changeFocus(option){
   if(option=='Clinica X'){
     MAP.setCenter(c2); 
     MAP.setZoom(9);    
-    
   }
   else{
-    MAP.setCenter( c1); 
+    MAP.setCenter(c1); 
     MAP.setZoom(9);
-    
   }
 }
 /** 
