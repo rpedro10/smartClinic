@@ -15,14 +15,18 @@
 
     
 
-    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+   
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  
   
   <!-- Custom styles for this template -->
   <link href="css/logo-nav.css" rel="stylesheet">
@@ -39,19 +43,21 @@
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <!--  <h2>Smart<span>Clinic</span></h2>-->
-             <img src="./img/logo.png  " width="200" height="40" alt=""> 
-
+             <img src="./img/logo.png  " width="170" height="40" alt=""> 
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-contacts">
-              <a class="nav-link" href="#"><h5 id="contacts">Contactos</h5></a>
-            </li>
+            <li class="nav-vision">
+              <a class="nav-link" href="#vision_container"><h5 id="vision">A NOSSA VISÃO</h5></a>
+            </li> 
+            <li class="nav-network">
+                <a class="nav-link" href="#info_map_container"><h5 id="network">REDE SMARTCLINICS</h5></a>
+              </li>
             <li class="nav-becoming">
-              <a class="nav-link" href="#"><h5 id="become">Torne-se SmartClinic</h5></a>
+              <a class="nav-link" href="become.html"><h5 id="become">TORNE-SE SMARTCLINIC</h5></a>
             </li>
           <!--    <li class="nav-login">
               <a class="nav-link" href="#" >
@@ -69,17 +75,18 @@
     
 
     <!-- Page Content -->
-    <div class="jumbotron" id="info" style="margin-top:1em">           
-    <div class="container ">
+    <div class="jumbotron" id="info" style="margin-top:1em;height:350px">           
+    <div class="container">
         <div class="row">
-          <div class="col-12 col-xl-6" >
+          <div class="col-12 col-xl-6" style="margin-top:5em">
            <!-- <div class="jumbotron">-->
-              <h2 class="display-4">Welcome</h2>
-              <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1
-                  500s, when an unknown printer took a galley</p>
+              <h3>Clínicas que cresceram ao seu lado.
+              </hh3>
               <hr class="my-4"> 
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1
-                500s, when an unknown printer took a galley </p>
+                </p>
+                <p class="lead">A rede SMART CLINIC é constituída por clínicas dentárias familiares que se distinguem pelos elevados padrões de qualidade no atendimento e acompanhamento dos seus utentes.  
+                  </p>
+                <!--
               <p class="lead">
                   <a class="btn btn-primary btn-lg" href="#" id="knowmore" role="button">Saiba <span id="more">Mais</span></a>
               </p>
@@ -89,6 +96,69 @@
         </div>
       </div>
     </div>
+ 
+      <div class="container" id="vision_container" style="margin-top:2em">
+        <div class="row">
+              <h1 id="vision_head">A nossa Visão</h1>
+        </div>
+        <br>
+        <div class="row" id="sub_row">
+            <h5 id="sub_head">Criámios, para si, uma marca de referência na área da saúde oral.  </h5>          
+        </div>
+        <br>
+        <br>
+        
+        <div class="row">
+                <div class="col-4">
+                    <div class="single-services">
+                        <a class="services-icon" >
+                            <i class="fa fa-camera-retro"></i>
+                          </a>
+                        <h6> Estabelecemos critérios de qualidade de excelência no 
+                            atendimento, acessibilidade e satisfação nos serviços oferecidos </h6>
+                    </div>
+                </div>     
+                <div class="col-4">
+                    <div class="single-services">
+                        <a class="services-icon" >
+                            <i class="fa fa-camera-retro"></i>
+                          </a>
+                          <h6> Fomos ao encontro das clínicas familiares que cumprem estes requisitos </h6>                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="single-services">
+                        <a class="services-icon" >
+                            <i class="fa fa-camera-retro"></i>
+                          </a>
+                          <h6>Convidamo-las a fazer parte de uma rede de referência para a sua comodidade. 
+                            </h6>
+                          </div>
+                </div>
+        </div>
+      </div>
+      
+              
+        <div class="container" id="testimonies" style="margin-top:2em">
+            <div class="row">
+                  <h1 id="vision_head">Testemunhos</h1>
+            </div>
+            <br>
+            <div class="row">
+                    <div class="col-4">
+                            <h6> "Prefiro os pequenos consultórios clínicos à confusão de grandes centros, e 
+                              a Smart Clinic permitiu-me conhecer os melhores serviços a este nível."</h6>
+                    </div>     
+                    <div class="col-4">
+                        <h6> "Desde pequeno que sou atendido pelo mesmo dentista. Com a mudança de residência para outra cidade,
+                           procurei o mesmo tipo de atendimento e a Smart Clinic foi essencial nesta escolha."</h6>      
+                    </div>
+                    <div class="col-4">
+                        <h6> "Utilizei a rede Smart Clinic para procurar o dentista mais indicado e de confiança para acompanhar os meus filhos. 
+                          Eu e os miúdos estamos muito satisfeitos." </h6>
+                    </div>
+            </div>
+          </div>
+
 
     <div class="modal fade" id="add_appointment">
         <div class="modal-dialog modal-dialog-centered modal-md">

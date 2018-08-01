@@ -18,11 +18,11 @@ body {
     padding-top: 56px;
   }
 }
-#contacts,#become{
+#network,#become,#vision{
   color:rgb(59, 59, 59);
-  
+  font-size: medium;
 }
-#contacts:hover,#become:hover{
+#vision:hover,#become:hover,#network:hover{
   color:white;
   
 }/**
@@ -34,10 +34,7 @@ div {
     padding: 0px;
   
 }
-#navbarResponsive{
-  font-size:large;
-  color:rgb(59, 59, 59);
-}
+
 
 .navbar-brand h2 span {
   color:rgb(59, 59, 59);
@@ -62,6 +59,7 @@ div {
   background-size: cover;
   padding: 5px;
   border-bottom: 5px solid rgb(138, 130, 130); 
+  
 }
 
 #column1 {
@@ -73,6 +71,7 @@ padding-right: 0px;
   padding-bottom: 0px;
   background-color: white;
   
+  
   }
   
 #nav-login{
@@ -80,10 +79,12 @@ padding-right: 0px;
   border-color: rgb(59, 59, 59);
   padding: 16px;
   color:white;
+  font-size: medium;  
   
 }
 #more{
 color:rgb(59, 59, 59);
+
 }
 #btn_find{
   width:100%;
@@ -154,6 +155,22 @@ width:30%;
 padding-top: 0px;
 
 }
+
+#vision_container,#vision_head,#sub_head{
+  text-align: center;
+  width:100%;
+  
+  
+}
+
+#vision_container,#testimonies{
+
+  box-shadow: 0px 6px grey;
+  text-align: center;
+  
+}
+
+  
 
 
 
