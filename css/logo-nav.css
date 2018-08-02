@@ -86,7 +86,7 @@ color:rgb(59, 59, 59);
   color: black;
   background-color: rgb(224, 224, 224);*/
 
-}
+}/**
 .btn-primary{
 background-color: #ffd43f;
 color: white;
@@ -99,7 +99,7 @@ box-shadow: 15px 6px grey;
   background-color: #ffd43f;
   border-color:rgb(59, 59, 59);
 }
-
+*/
 
   #clinic-list{
     background-color: #ffd43f;
@@ -163,5 +163,3 @@ padding-top: 0px;
   text-align: center;
   
 }
-
- 
