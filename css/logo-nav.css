@@ -9,12 +9,15 @@ body {
   text-align: justify;
   text-justify: inter-word;
    /* font-family: DejaVu Sans Mono, monospace;*/
+   font-family: 'Acumin Pro',Futura,'Trebuchet MS',Arial,sans-serif;
+   
   
 }
 
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
+
   }
 }
 
