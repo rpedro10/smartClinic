@@ -3,13 +3,36 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logo-nav/blob/master/LICENSE)
  */
+/****   BECOME PAGE    ***/
+ #contact{
+background-color: #ffd43f;
+padding: 33px;
+ }
+ #work_with_us{
+  background-color: #ffd43f;
+  padding: 63px;
+  
+  
+ }
+ #about{
+  /*background-color:rgb(200, 201, 199);*/
+  box-shadow: 0px 5px grey;
+  padding: 33px;
+  
+ }
+#services{
+  text-align: center;
+
+}
+/****   BECOME PAGE    ***/
+
 
 body {
   padding-top: 54px;
   text-align: justify;
   text-justify: inter-word;
    /* font-family: DejaVu Sans Mono, monospace;*/
-   font-family: 'Trebuchet MS',Arial,sans-serif;
+   font-family:'Acumin Pro','Futura' 'Trebuchet MS',Arial,sans-serif;
    
   
 }
@@ -25,6 +48,7 @@ body {
   color:rgb(59, 59, 59);
   font-size: small;
   font-weight: bold;
+  
 }
 
 #vision:hover,#become:hover,#network:hover{
@@ -33,6 +57,7 @@ body {
 }
 
 #navbar { 
+  
   background-color:#ffd43f;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -49,17 +74,36 @@ body {
 }
 
 .carousel-caption {
-  left: 10%;
   text-align: left;
-  max-width: 500px;
+  max-width: 600px;
   right: auto;
   padding:5px;
+  bottom: 50%;
+  
+}
+#caption1{
+  max-width: 400px;
+  bottom: 40%;
+  background: rgba(1, 1, 1, 0.1);  /*Black background with transparency */
+}
+#caption2{
+  max-width: 550px;
   bottom: 30%;
+  background: rgba(1, 1, 1, 0.5);  /*Black background with transparency */
+  
+}
+#caption3{
+  max-width: 530px;
+  bottom: 33%;
+  background: rgba(1, 1, 1, 0.2);  /*Black background with transparency */
+  border: 5px solid #ffd43f;
+  
 }
 
 
+/*
 #info {
- /* background-image: url("../img/dentista.jpg");*/
+  background-image: url("../img/dentista.jpg");
   margin-bottom: 0;
   min-height: 50%;
   background-repeat: no-repeat;
@@ -69,7 +113,7 @@ body {
   padding: 5px;
   border-bottom: 5px solid rgb(138, 130, 130); 
   
-}
+}*/
 
 #column1 {
 padding-right: 0px;
