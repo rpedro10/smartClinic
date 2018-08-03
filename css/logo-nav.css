@@ -9,7 +9,7 @@ body {
   text-align: justify;
   text-justify: inter-word;
    /* font-family: DejaVu Sans Mono, monospace;*/
-   font-family: 'Acumin Pro',Futura,'Trebuchet MS',Arial,sans-serif;
+   font-family: 'Trebuchet MS',Arial,sans-serif;
    
   
 }
@@ -34,8 +34,11 @@ body {
 
 #navbar { 
   background-color:#ffd43f;
-    padding: 0px;
-  
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+
+  height: 60px;
 }
 
 
@@ -46,9 +49,12 @@ body {
 }
 
 .carousel-caption {
-  top: 0;
-  bottom: auto;
-  
+  left: 10%;
+  text-align: left;
+  max-width: 500px;
+  right: auto;
+  padding:5px;
+  bottom: 30%;
 }
 
 
@@ -79,15 +85,17 @@ padding-right: 0px;
   
 #nav-login{
   background-color:rgb(59, 59, 59);
-  border-color: rgb(59, 59, 59);
-  padding: 16px;
   color:white;
-  font-size: small;  
+  font-size: small; 
+  padding:21px;
+   
   
 }
 #more{
 color:rgb(59, 59, 59);
 }
+
+
 #btn_find{
   width:100%;
   /*
