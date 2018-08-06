@@ -26,13 +26,22 @@ padding: 33px;
 }
 /****   BECOME PAGE    ***/
 
-
+/**
+@font-face {
+  font-family: myFirstFont;
+  src: url(acuminPro/Acumin-BdPro.otf);
+}
+*/
 body {
   padding-top: 54px;
   text-align: justify;
   text-justify: inter-word;
-   /* font-family: DejaVu Sans Mono, monospace;*/
+   /* font-family: DejaVu Sans Mono, monospace;
    font-family:'Acumin Pro','Futura' 'Trebuchet MS',Arial,sans-serif;
+      font-family: myFirstFont;
+*/
+      font-family: 'Raleway','Source Sans Pro', sans-serif;
+
    
   
 }
@@ -254,4 +263,11 @@ padding-top: 0px;
 #footer-row2{
   padding-top: 20px;
   
+}
+/******/
+
+#carousel2 .jumbotron{
+  background-color:#ffd43f; 
+  padding: 40px; 
+  text-align: center;
 }
