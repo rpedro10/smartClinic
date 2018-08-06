@@ -223,3 +223,17 @@ padding-top: 0px;
   text-align: center;
   
 }
+
+/***footer**/
+
+.page-footer{
+  background-color: rgb(59, 59, 59);  
+  padding:50px;
+}
+.nav-link{
+  color:white;
+}
+#footer-row2{
+  border-top: 1px solid #ffd43f;
+  padding-top: 10px;
+}
