@@ -15,6 +15,7 @@ body {
   padding-top: 54px;
   text-align: justify;
   text-justify: inter-word;
+  
    /* font-family: DejaVu Sans Mono, monospace;
    font-family:'Acumin Pro','Futura' 'Trebuchet MS',Arial,sans-serif;
       font-family: myFirstFont;
@@ -33,10 +34,7 @@ body {
 }
 /**  HOMEPAGE **/
 /**slider*/
-.header{
-  width:100%;
 
-}
 /**navbar**/
 #network,#become,#vision{
   color:rgb(59, 59, 59);
@@ -158,7 +156,7 @@ box-shadow: 15px 6px grey;
     background-color: #ffd43f;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 22px;
   }
 
   #googleMap{
@@ -187,26 +185,28 @@ border-top-left-radius: -8px;
 }
 /** end A REDE **/
 
-/**
+/**  /** LOGIN page**/
+
 #jumbotron_login{
-width:30%;
-
+width:35%;
 }
+/*** end LOGIN PAGE*/
 
-#_btns{
-padding-top: 0px;
-
-}
-*/
 /*** A NOSSA VISAO **/
 #vision_container,#vision_head,#sub_head{
   text-align: center;
   width:100%;
   
 }
+
 /*** end A NOSSA VISAO ****/
 
 /********* testimonies *******/
+#testimonies_head{
+  text-align: center;
+  width:100%;
+  
+}
 .carousel-indicator{
   border-top: 2px solid grey;
   border-top-right-radius: 10px;
@@ -217,11 +217,19 @@ padding-top: 0px;
 
 #testimonies_container{
   width:50%;
+  
+}
+#testimonies_container .jumbotron{
+  background-color:white;   
+  
 }
 
-#testimonies_container .jumbotron{
-  background-color: white;
-}  
+#testimonies_container .container {
+  padding:22px;
+  background-color: #ffd43f;  
+  font-weight: bold;  }  
+
+
 /*********end testimonies********/
 
 /***footer**/
@@ -235,7 +243,6 @@ padding-top: 0px;
 }
 .nav-link{
   color:white;
-  size: large;
   display: inline;    
   
 }
@@ -282,3 +289,4 @@ padding-top: 0px;
   
   }
   /****   BECOME PAGE    ***/
+
