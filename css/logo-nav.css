@@ -3,28 +3,7 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logo-nav/blob/master/LICENSE)
  */
-/****   BECOME PAGE    ***/
- #contact{
-background-color: #ffd43f;
-padding: 33px;
- }
- #work_with_us{
-  background-color: #ffd43f;
-  padding: 63px;
-  
-  
- }
- #about{
-  /*background-color:rgb(200, 201, 199);*/
-  box-shadow: 0px 5px grey;
-  padding: 33px;
-  
- }
-#services{
-  text-align: center;
 
-}
-/****   BECOME PAGE    ***/
 
 /**
 @font-face {
@@ -46,18 +25,31 @@ body {
       
   
 }
-
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
 
   }
 }
+/**  HOMEPAGE **/
+/**slider*/
+.header{
+  width:100%;
 
+}
+/**navbar**/
 #network,#become,#vision{
   color:rgb(59, 59, 59);
   font-size: small;
   font-weight: bold;
+  
+}
+#nav-login{
+  background-color:rgb(59, 59, 59);
+  color:white;
+  font-size: small; 
+  padding:21px;
+   
   
 }
 
@@ -77,12 +69,12 @@ body {
 .navbar-brand  {
   padding-top: 10px;
   padding-left: 40px;
-  /*box-shadow: 0px 10px rgb(59, 59, 59);*/
   
 }
+/* end navbar*/
 
 
-
+/**
 .carousel-caption {
   text-align: left;
   max-width: 600px;
@@ -94,22 +86,22 @@ body {
 #caption1{
   max-width: 400px;
   bottom: 40%;
-  background: rgba(1, 1, 1, 0.1);  /*Black background with transparency */
+  background: rgba(1, 1, 1, 0.1);  /*Black background with transparency 
 }
 #caption2{
   max-width: 550px;
   bottom: 30%;
-  background: rgba(1, 1, 1, 0.5);  /*Black background with transparency */
+  background: rgba(1, 1, 1, 0.5);  /*Black background with transparency 
   
 }
 #caption3{
   max-width: 530px;
   bottom: 33%;
-  background: rgba(1, 1, 1, 0.2);  /*Black background with transparency */
+  background: rgba(1, 1, 1, 0.2);  /*Black background with transparency 
   border: 5px solid #ffd43f;
   
 }
-
+**/
 
 /*
 #info {
@@ -132,22 +124,13 @@ padding-right: 0px;
 #column2 {
   padding-left: 0px;
   padding-bottom: 0px;
-  background-color: white;
-  
-  
-  }
-  
-#nav-login{
-  background-color:rgb(59, 59, 59);
-  color:white;
-  font-size: small; 
-  padding:21px;
-   
-  
 }
+ /** */
+
+/**
 #more{
 color:rgb(59, 59, 59);
-}
+}*/
 
 
 #btn_find{
@@ -170,12 +153,12 @@ box-shadow: 15px 6px grey;
   border-color:rgb(59, 59, 59);
 }
 */
-
+/*** A REDE ***/
   #clinic-list{
     background-color: #ffd43f;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    /*padding-bottom: 0px;*/
+    padding-bottom: 10px;
   }
 
   #googleMap{
@@ -183,55 +166,63 @@ box-shadow: 15px 6px grey;
     border-bottom-right-radius: 8px;
   }
 
-  /********/
-#btns_row{
+/*#btns_row{
 padding-top: 0px;
 background-color: white;  
-/*border-top-left-radius: -8px;*/
-
-
+border-top-left-radius: -8px;
 }
+
 #info_row{
-  background-color: #ffd43f;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
-}
-/******/
-
-
-
+}*/
+/***buttons ***/
 #call,#appointment{
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
   padding: 32px 16px; 
   width:100%;
   background-color: rgb(59, 59, 59);  
   align-content: center;
 }
+/** end A REDE **/
 
+/**
 #jumbotron_login{
 width:30%;
 
 }
+
 #_btns{
 padding-top: 0px;
 
 }
-
+*/
+/*** A NOSSA VISAO **/
 #vision_container,#vision_head,#sub_head{
   text-align: center;
   width:100%;
   
-  
+}
+/*** end A NOSSA VISAO ****/
+
+/********* testimonies *******/
+.carousel-indicator{
+  border-top: 2px solid grey;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
-#vision_container,#testimonies{
-
-  text-align: center;
-  
+#testimonies_container{
+  width:50%;
 }
+
+#testimonies_container .jumbotron{
+  background-color: white;
+}  
+/*********end testimonies********/
 
 /***footer**/
 
@@ -240,6 +231,7 @@ padding-top: 0px;
   background-color: rgb(59, 59, 59);  
   padding:50px;
   text-align: left;
+  bottom:0;
 }
 .nav-link{
   color:white;
@@ -266,61 +258,27 @@ padding-top: 0px;
 }
 /**************** end footer************/
 
-/********* testimonies *******/
-.carousel-indicator{
-  border-top: 2px solid black;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
 
-#testimonies_container{
-  width:50%;
-  height: 400px;
-}
-#testimonies_container .jumbotron{
-  background-color: white;
-}  
 
-/* Style the container with a rounded border, grey background and some padding and margin */
-#carousel2 .container {
-  border: 2px solid #ccc;
-  background-color: #eee;
-  border-radius: 5px;
-  padding: 26px;
-  margin: 16px 0;
-}
-
-/* Clear floats after containers */
-#carousel2 .container::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
-#carousel2 .container img {
-  float: left;
-  margin-right: 20px;
-  border-radius: 50%;
-}
-
-/* Increase the font-size of a span element */
-#carousel2 .container span {
-  font-size: 20px;
-  margin-right: 15px;
-}
-
-/* Add media queries for responsiveness. This will center both the text and the image inside the container */
-@media (max-width: 500px) {
-  #carousel2 .container {
-  text-align: center;
-}
-
-#carousel2 .container img {
-  margin: auto;
-  float: none;
-  display: block;
-}
-}
+/****   BECOME PAGE    ***/
+#contact{
+  background-color: #ffd43f;
+  padding: 33px;
+   }
+   #work_with_us{
+    background-color: #ffd43f;
+    padding: 63px;
+    
+    
+   }
+   #about{
+    /*background-color:rgb(200, 201, 199);*/
+    box-shadow: 0px 5px grey;
+    padding: 33px;
+    
+   }
+  #services{
+    text-align: center;
+  
+  }
+  /****   BECOME PAGE    ***/
