@@ -23,8 +23,10 @@ body {
       font-family: 'Raleway','Source Sans Pro', sans-serif;
 
       padding-top: 65px; 
-      
-  
+
+}
+h1{
+  font-weight: 700;
 }
 @media (min-width: 992px) {
   body {
@@ -201,6 +203,7 @@ width:35%;
 
 /*** end A NOSSA VISAO ****/
 
+
 /********* testimonies *******/
 #testimonies_head{
   text-align: center;
@@ -268,25 +271,101 @@ width:35%;
 
 
 /****   BECOME PAGE    ***/
+
+
+
+
+
+
 #contact{
   background-color: #ffd43f;
   padding: 33px;
+  font-weight: bold;
    }
+   /**
    #work_with_us{
     background-color: #ffd43f;
     padding: 63px;
-    
-    
    }
+   */
    #about{
     /*background-color:rgb(200, 201, 199);*/
-    box-shadow: 0px 5px grey;
     padding: 33px;
+    text-align: left;
+    font-weight: bold;
     
    }
+ 
   #services{
     text-align: center;
   
   }
+
+  #about .container-box {
+    border: 2px solid #ffd43f;
+    padding:22px;
+    
+  }
+  #about  li {
+    list-style-image: url('../img/checked.png');
+    padding:5px;
+   
+ }
+ /**
+ ul { padding-left:20px; list-style:none; }
+ li { margin-bottom:10px; }
+ li:before {    
+     font-family: 'FontAwesome';
+     content: '\f058';
+     margin:0 5px 0 -15px;
+ }
+
+li::before {
+  content: "\f00c";
+  color: #ffd43f;
+  font-size: 66px;
+  font-family: 'Font Awesome\ 5 Free';
+}
+*/
+  #about .row{
+    text-align: justify;
+    padding:22px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 77%;/***/
+  }
+  #about .img  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 76px;
+    height:75px;
+  }
+
+  .button-container{
+  text-align: center;
+  }
+ 
+
+ #about .btn-secondary, #services .btn-secondary{
+    background-color: #ffd43f;
+    color: rgb(59, 59, 59);
+    border-color:#ffd43f;
+    font-weight: bold;
+    
+    }
+  #about .btn-secondary:hover,#services .btn-secondary:hover{
+      background-color: #ffd43f;
+      border-color:rgb(59, 59, 59);
+    }
+
+    #services .row {
+      padding:22px;
+    }
+    #services .services-icon{
+      padding-bottom: 11px;
+
+    }
   /****   BECOME PAGE    ***/
 
