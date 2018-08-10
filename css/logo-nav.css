@@ -19,14 +19,16 @@ body {
    /* font-family: DejaVu Sans Mono, monospace;
    font-family:'Acumin Pro','Futura' 'Trebuchet MS',Arial,sans-serif;
       font-family: myFirstFont;
-*/
-      font-family: 'Raleway','Source Sans Pro', sans-serif;
 
+      font-family: 'Source Sans Pro', sans-serif;*/
+      font-family: 'Montserrat', sans-serif;
+      
       padding-top: 65px; 
 
 }
 h1{
-  font-weight: 700;
+  font-weight: 900;
+  
 }
 @media (min-width: 992px) {
   body {
@@ -251,6 +253,9 @@ padding: 11px;
     padding:5px;
    
  }
+ #about{
+   padding-top:0px; 
+ }
  /**
  ul { padding-left:20px; list-style:none; }
  li { margin-bottom:10px; }
@@ -267,6 +272,7 @@ li::before {
   font-family: 'Font Awesome\ 5 Free';
 }
 */
+
   #about .row{
     text-align: justify;
     padding:22px; 
@@ -275,7 +281,7 @@ li::before {
     margin-right: auto;
     width: 77%;/***/
   }
-  #about .img  {
+ #seta  {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -307,6 +313,102 @@ li::before {
       padding-bottom: 11px;
 
     }
+/***/
+    #banner1{
+     background-image: url("../img/fundo2.png ");
+      background-repeat:repeat;
+      padding:0px;
+    }
+    #banner1 {
+background-color:white ;
+  color: white;
+   }
+
+/* Bottom right text  
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;  
+}*/
+  
+    
+    #banner1 .row{
+      padding:0px;      
+    }
+    #banner1 p {
+      padding:11px;      
+    }
+    
+    #banner1 .row {
+      padding:65px;
+     /* background-color: rgba(155, 155, 143, 0.6);*/
+      
+    }
+    #banner1 .row1{
+      padding-top:0px;
+      padding-right:1px;
+      padding-bottom: 0px;
+    }
+    #col1{
+      padding-top:100px;
+      color:white;
+      padding-right: 33px;
+    }
+   
+    #col2{
+      padding-left: 0px;
+     
+    }
+    #col2 .row{
+      padding-left: 11px;
+      padding-right: 11px;
+      padding-top: 55px;
+      background-color: rgba(255, 224, 38, 0.62);
+    
+        
+    }
+    #col2 .row:hover{
+      padding-left: 11px;
+      padding-right: 11px;
+      padding-top: 55px;
+      background-color: rgba(255, 224, 38, 0.7);
+    
+        
+    }
+   
+    #col2 .row2{
+      padding-left: 0px;
+      padding-right: 0px;
+      background-color: rgba(0, 0, 0, 0.31);
+      text-align: center;
+    }
+    #col2 .row2:hover{
+      padding-left: 0px;
+      padding-right: 0px;
+      background-color: rgba(0, 0, 0, 0.88);
+      text-align: center;
+    }
+   
+
+    #btn_contact{
+      background-color: Transparent;
+      background-repeat:no-repeat;
+      border: 2px solid white; /* Green */
+      cursor:pointer;
+      overflow: hidden;
+      outline:none;
+    }
+    #btn_contact:hover{
+      background-color: white;
+      background-repeat:no-repeat;
+      border: 2px solid white; /* Green */
+      cursor:pointer;
+      overflow: hidden;
+      outline:none;
+      color:black;
+    }
+    
+*/
   /****   BECOME PAGE    ***/
 
 /*****USER PROFILE PAGE **/
