@@ -65,7 +65,7 @@ h1{
     padding: 0px;
     
 }
-.navbar-brand,
+
 
 
 .navbar-brand  {
@@ -75,6 +75,10 @@ h1{
 }
 /* end navbar*/
 
+.carousel-caption {
+  
+bottom: 50%; 
+}
 
 
 
@@ -90,7 +94,21 @@ padding-right: 0px;
 
 #btn_find{
   width:100%;
+  background-color: lightgray;
+  background-repeat:no-repeat;
+  border: 2px solid lightgray; /* Green */
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
 
+#btn_find:hover{
+background-color: white;
+background-repeat:no-repeat;
+cursor:pointer;
+overflow: hidden;
+outline:none;
+color:black;
 }
 /*** A REDE ***/
   #clinic-list{
@@ -107,11 +125,29 @@ padding-right: 0px;
 
 
 /***buttons ***/
+
+
+
+#call:hover,#appointment:hover{
+background-color: white;
+background-repeat:no-repeat;
+border: 2px solid white; /* Green */
+cursor:pointer;
+overflow: hidden;
+outline:none;
+color:black;
+}
 #call,#appointment{
-  padding: 32px 16px; 
-  width:100%;
-  background-color: rgb(59, 59, 59);  
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: 2px solid grey; /* Green */
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+   width:100%;
   align-content: center;
+  color:grey;
+  
 }
 /** end A REDE **/
 
