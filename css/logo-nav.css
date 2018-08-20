@@ -85,16 +85,17 @@ h2{
 }
 
 #caption1{
-  max-width: 580px;
+  max-width: 400px;
   bottom: 30%;
+  color:black;
 }
 #caption2{
-  max-width: 580px;
+  max-width: 400px;
   bottom: 30%;
   
 }
 #caption3{
-  max-width: 580px;
+  max-width: 500px;
   bottom: 30%;
   color:black;
  
