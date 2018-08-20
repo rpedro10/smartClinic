@@ -266,18 +266,38 @@ function myMap() {
     animation: google.maps.Animation.DROP, icon: "./img/pin3.png"});
 
   //TO show INFO WINDOW about the clinic
-    var contentString = '<div id="content">'+
-    '<div id="siteNotice">'+
-    '</div>'+
-    '<h6 id="firstHeading" class="firstHeading">Clinica Ferreira Borges </h6>'+
-    '<div id="bodyContent">'+
-    '<p>'+
-    ' Nºde telefone:91254444 '+ '<br>'+
-    'RUA FERREIRA BORGES 113C ,1234-130 LISBOA '+
-    '</p>'
-    '</div>'+
+    var contentString = 
+    '<div id="content">'+
+        '<h6 id="firstHeading" class="firstHeading">Clinica Ferreira Borges </h6>'+
+        '<div id="bodyContent">'+
+          '<p>'+
+              ' Nºde telefone:91254444 '+ '<br>'+
+              'RUA FERREIRA BORGES 113C ,1234-130 LISBOA '+
+          '</p>'+
+        '</div>'+
+        '<div   id="btns_row">'+
+          '<a class="btn btn-default btn-ms" href="#" data-toggle="modal" data-target="#make_call" id="" role="button">Marcação Online</a>'
+           +
+           '<a class="btn btn-default" href="#" data-toggle="modal" data-target="#add_appointment" id="" role="button">Linha Smart</a>'
+           +
+        '</div>'+
     '</div>';
   
+    /**
+    <div class="row" id="btns_row">
+            <div class="col-sm">
+              <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#make_call" id="call" role="button">Linha Smart
+                
+              </a>
+            </div>
+            <div class="col-sm">
+              <a class="btn btn-secondary btn-lg" href="#" data-toggle="modal" data-target="#add_appointment" id="appointment" role="button">Marcação Online
+                <!--<i class="fas fa-calendar-alt"></i>-->
+              </a>
+            </div>
+          </div>
+    
+     */
     var infowindow = new google.maps.InfoWindow({
       content: contentString
     });
