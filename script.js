@@ -78,7 +78,7 @@ $(document).ready(function(){ //scroll in the homepage
   $('body').scrollspy({target: "#banner1", offset: 0});   
 
   // Add smooth scrolling on all links inside the navbar
-  $("#btn_more a").on('click', function(event) {
+  $("#btn_more ").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior

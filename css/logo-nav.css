@@ -232,8 +232,10 @@ padding: 11px;
   width:50%;
   
 }
+*//**
 #testimonies_container .jumbotron{
-  background-color:white;   
+   background-color: rgba(2, 102, 102, 0.55);
+
   
 }
 
