@@ -11,6 +11,10 @@
   src: url(acuminPro/Acumin-BdPro.otf);
 }
 */
+
+.dropdown{
+  width:100%;
+}
 body {
   padding-top: 54px;
   text-align: justify;
@@ -379,7 +383,7 @@ li::before {
     }
 /***/
     #banner1{
-     background-image: url("../img/fundo2.png ");
+     background-image: url("../img/try2.jpg ");
       background-repeat:repeat;
       padding:0px;
     }
@@ -418,44 +422,56 @@ background-color:white ;
       padding-top:0px;
       padding-right:1px;
       padding-bottom: 0px;
+      padding-left:0px;
     }
     #col1{
       padding-top:100px;
       color:white;
       padding-right: 33px;
+      background-color: rgba(0, 0, 0, 0.71);
+      padding-right:0px;
+      
     }
-   
+
+    #banner_row1{
+      padding-left:0px;
+    }
+    #col1:hover{
+
+      background-color: rgba(0, 0, 0, 0.81);
+      
+    }
+   /**
     #col2{
       padding-left: 0px;
      
-    }
+    }*/
     #col2 .row{
       padding-left: 11px;
       padding-right: 11px;
       padding-top: 55px;
-      background-color: rgba(255, 224, 38, 0.82);
-    
-        
+      background-color: rgba(2, 102, 102, 0.55);
+     
     }
     #col2 .row:hover{
       padding-left: 11px;
       padding-right: 11px;
       padding-top: 55px;
-      background-color: rgba(255, 224, 38, 0.7);
-    
+      background-color: rgba(2, 102, 102, 0.77);
+      
         
     }
    
     #col2 .row2{
       padding-left: 0px;
       padding-right: 0px;
-      background-color: rgba(0, 0, 0, 0.31);
+      background-color: rgba(203, 153, 4, 0.66);
       text-align: center;
     }
     #col2 .row2:hover{
       padding-left: 0px;
       padding-right: 0px;
-      background-color: rgba(0, 0, 0, 0.88);
+      background-color: rgba(203, 153, 4, 0.88);
       text-align: center;
     }
    
