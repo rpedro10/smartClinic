@@ -101,7 +101,7 @@ h2{
 #caption3{
   max-width: 500px;
   bottom: 30%;
-  color:black;
+  color:white;
  
 }
 
@@ -310,7 +310,10 @@ padding: 11px;
  
   #services{
     text-align: center;
-  
+    
+  }
+  #services .container{
+    width:75%;
   }
 
   #about .container-box {
@@ -378,7 +381,8 @@ li::before {
     }
 
     #services .row {
-      padding:22px;
+      padding:11px;
+      
     }
     #services .services-icon{
       padding-bottom: 11px;
