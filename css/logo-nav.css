@@ -407,11 +407,11 @@ background-color:white ;
       padding:0px;      
     }
     #banner1 p {
-      padding:11px;      
+      padding:5px;      
     }
     
     #banner1 .row {
-      padding:65px;
+      padding:25px;
      /* background-color: rgba(155, 155, 143, 0.6);*/
       
     }
@@ -429,7 +429,7 @@ background-color:white ;
       margin-right:0em;
     }
     #col1{
-      padding-top:100px;
+      padding-top:190px;
       color:white;
       padding-right: 33px;
       background-color: rgba(0, 0, 0, 0.71);
@@ -453,14 +453,14 @@ background-color:white ;
     #col2 .row{
       padding-left: 11px;
       padding-right: 11px;
-      padding-top: 55px;
+      padding-top: 50px;
       background-color: rgba(2, 102, 102, 0.55);
      
     }
     #col2 .row:hover{
       padding-left: 11px;
       padding-right: 11px;
-      padding-top: 55px;
+      padding-top: 50px;
       background-color: rgba(2, 102, 102, 0.77);
       
         
