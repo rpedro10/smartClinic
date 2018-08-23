@@ -185,10 +185,16 @@ color:black;
 /** end A REDE **/
 
 /**  /** LOGIN page**/
-
 #jumbotron_login{
-width:35%;
+-webkit-box-align: center;
 }
+
+#jumbotron_login {
+  max-width: 400px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
 /*** end LOGIN PAGE*/
 
 /*** A NOSSA VISAO **/
@@ -290,7 +296,6 @@ padding: 11px;
 
 
 
-
 #contact{
   background-color: #ffd43f;
   padding: 33px;
@@ -307,12 +312,10 @@ padding: 11px;
     padding: 33px;
     text-align: left;
     font-weight: bold;
-   width: 77%; /***/
-   
+    
    }
  
   #services{
-    
     text-align: center;
     
   }
@@ -320,7 +323,11 @@ padding: 11px;
     width:75%;
   }
 
-  
+  #about .container-box {
+    border: 2px solid #ffd43f;
+    padding:22px;
+    
+  }
   #about  li {
     list-style-image: url('../img/checked.png');
     padding:5px;
@@ -329,7 +336,21 @@ padding: 11px;
  #about{
    padding-top:0px; 
  }
- 
+ /**
+ ul { padding-left:20px; list-style:none; }
+ li { margin-bottom:10px; }
+ li:before {    
+     font-family: 'FontAwesome';
+     content: '\f058';
+     margin:0 5px 0 -15px;
+ }
+li::before {
+  content: "\f00c";
+  color: #ffd43f;
+  font-size: 66px;
+  font-family: 'Font Awesome\ 5 Free';
+}
+*/
 
   #about .row{
     text-align: justify;
@@ -337,6 +358,7 @@ padding: 11px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 77%;/***/
   }
  #seta  {
    padding-top: 15px;
@@ -496,9 +518,7 @@ background-color:white ;
 /**
     #partners .container, #awards .container{
       width:55%;
-
     }
-
     #awards .container{
       width:50%
     }

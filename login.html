@@ -28,7 +28,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
+  
   <!-- Custom styles for this template -->
   <link href="css/logo-nav.css" rel="stylesheet">
 
@@ -38,7 +38,7 @@
 
 <body>
 
-
+ 
   <!-- Navigation -->
   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top">
     <div class="container">
@@ -76,9 +76,10 @@
       <i class="fas fa-sign-in-alt fa-fw"></i> Login </a>
   </nav>
 
-
-  <div class="jumbotron container" id="jumbotron_login" style="margin-top:3em">
-    <h3 class="title">Login</h3>
+<div class="container">
+  <div class="jumbotron " id="jumbotron_login" style="margin-top:3em">
+    <h3 class="text-center">Login</h3>
+    <p>Se a sua clínica dentária já pertence à nossa rede:</p>
     <hr>
     <form method="POST" action="">
       <label for="username">Username</label>
@@ -89,7 +90,6 @@
           </span>
         </div>
         <input id="username" type="text" name="username" class="form-control" placeholder="Username" required autofocus>
-
       </div>
       <label for="password">Password</label>
       <div class="input-group mb-2">
@@ -102,84 +102,85 @@
 
       </div>
 
-
+<!--
       <label>
-        <input type="checkbox" name="remember" {{ old( 'remember') ? 'checked' : '' }}> Remember Me
+        <input type="checkbox" name="remember"> Remember Me
       </label>
-
-
+    -->
 
       <hr>
 
       <button type="submit" class="btn btn-block btn-success mb-2">Login</button>
-    </form>
-    
-  </div>
+  </form>
 
   </div>
 
+  </div>
+
+ 
   <footer class="page-footer" style="margin-top:2em;">
-    <div class="container">
-      <div class="row" id="footer-row1">
-        <div class="col-lg-7">
-          <ul class="nav">
-            <li class="nav-footer">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-footer">
-              <a class="nav-link" href="#vision_container">A nossa Visão</a>
-            </li>
-            <li class="nav-footer">
-              <a class="nav-link" href="#info_map_container">A Rede</a>
-            </li>
-            <li class="nav-footer">
-              <a class="nav-link" href="become.html">Torne-se SmartClinic</a>
-            </li>
-
-          </ul>
+      <div class="container">
+        <div class="row" id="footer-row1">
+          <div class="col-lg-7">
+            <ul class="nav ">
+              <li class="nav-footer">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-footer">
+                <a class="nav-link" href="#vision_container">Visão</a>
+              </li>
+              <li class="nav-footer">
+                <a class="nav-link" href="#info_map_container">Rede SmartClinic</a>
+              </li>
+              <li class="nav-footer">
+                <a class="nav-link" href="become.html">Torne-se SmartClinic</a>
+              </li>
+  
+            </ul>
+          </div>
+          <div class="col-lg-5">
+            <ul class="nav ">
+              <li class="nav-social-media">
+                <a class="nav-link  " href="https://instagram.com" target="_blank">
+                  <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+              </li>
+              <li class="nav-social-media">
+                <a class="nav-link" href="https://facebook.pt" target="_blank">
+                  <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+              </li>
+              <li class="nav-social-media">
+                <a class="nav-link" href="https://google.pt" target="_blank">
+                  <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+              </li>
+            </ul>
+  
+          </div>
         </div>
-        <div class="col-lg-5">
-          <ul class="nav ">
-            <li class="nav-social-media">
-              <a class="nav-link  " href="https://instagram.com" target="_blank">
-                <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
-              </a>
-            </li>
-            <li class="nav-social-media">
-              <a class="nav-link" href="https://facebook.pt" target="_blank">
-                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-              </a>
-            </li>
-            <li class="nav-social-media">
-              <a class="nav-link" href="https://google.pt" target="_blank">
-                <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-              </a>
-            </li>
-          </ul>
-
+        <div class="row" id="footer-row2">
+          <div class="col-lg-12">
+            <ul class="nav">
+              <li class="nav-footer">
+                <a class="nav-link" href="#">Termos e Condições</a>
+              </li>
+              <li class="nav-footer">
+                <a class="nav-link" href="#">Politica de Privacidade e cookies</a>
+              </li>
+              <li class="nav-footer">
+                <p>| © 2018 Todos os direitos reservados
+                </p>
+              </li>
+            </ul>
+  
+          </div>
+  
         </div>
       </div>
-      <div class="row" id="footer-row2">
-        <div class="col-lg-12">
-          <ul class="nav">
-            <li class="nav-footer">
-              <a class="nav-link" href="#">Termos e Condições</a>
-            </li>
-            <li class="nav-footer">
-              <a class="nav-link" href="#">Politica de Privacidade e cookies</a>
-            </li>
-            <li class="nav-footer">
-              <p>| © 2018 Todos os direitos reservados
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-
-  </footer>
-
+  
+  
+    </footer>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
