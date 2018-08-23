@@ -40,48 +40,61 @@
 </head>
 
 <body>
-  <!-- Navigation -->
-  <!-- Navigation -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <!--  <h2>Smart<span>Clinic</span></h2>-->
-        <img src="./img/logo.png" width="180" height="40" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-vision">
-            <a id="vision" class="nav-link" href="index.html">A NOSSA VISÃO</a>
-          </li>
-          <li class="nav-network">
-            <a id="network" class="nav-link" href="index.html">A REDE </a>
-          </li>
-          <li class="nav-becoming">
-            <a id="become" class="nav-link" href="become.html">TORNE-SE SMARTCLINIC</a>
-          </li>
-          <!--
-               <li class="nav-login">
-                <a class="nav-link" href="#" >
-                <i class="fas fa-sign-in-alt fa-fw"></i> Login </a>             
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <!--  <h2>Smart<span>Clinic</span></h2>-->
+            <img src="./img/logo.png" width="180" height="40" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-vision">
+                <a id="vision" class="nav-link" href="index.html"> VISÃO</a>
               </li>
-            -->
-        </ul>
+              <li class="nav-network">
+                <a id="network" class="nav-link" href="index.html">ENCONTRE UMA SMARTCLINIC </a>
+              </li>
+              <!--   <li class="nav-becoming">
+                <a id="become" class="nav-link" href="become.html">TORNE-SE SMARTCLINIC</a>
+              </li>
+            
+                 <li class="nav-login">
+                  <a class="nav-link" href="#" >
+                  <i class="fas fa-sign-in-alt fa-fw"></i> Login </a>             
+                </li>
+              -->
+            </ul>
+    
+          </div>
+    
+        </div>
+        <a class="nav-link" id="nav-login" href="login.html">
+          <i class="fas fa-sign-in-alt fa-fw"></i> Login </a>
+      </nav>
 
+
+  <!-- Page content  
+  <div class="container-fluid" style="background-color:aqua">
+      <div class="row">
+        <div class="col-6">
+          <div class="container text-center">
+              <h3>
+                  <strong>Pequeno investimento, grande retorno</strong>
+                </h3>
+                <p>
+                  Ao integrar a rede SMART CLINIC está a dar um impulso extra à sua clínica e a alargar a base de pacientes que podem realizar
+                  um tratamento no seu consultório.
+                </p>
+          </div>
+        </div>        
       </div>
-
     </div>
-    <a class="nav-link" id="nav-login" href="userProfile.html">
-      <i class="fas fa-sign-in-alt fa-fw"></i> Login </a>
-  </nav>
-
-
-  <!-- Page content  -->
-
-  <main class="main" style="margin-top:44;" id="banner1">
+-->
+  <main class="main " style="margin-top:44;" id="banner1">
       <!-- <img src="./img/back.png" alt="Norway" style="width:100%;">-->
       <div class="text-block">
         <div class="row row1">
@@ -115,11 +128,9 @@
                     Faça parte do maior portal agregador de clínicas dentárias e deixe que os pacientes o encontrem à distância de um clique,
                     a qualquer hora e em todos os distritos.
                   </p>
-                  <a class="btn btn-primary btn-md" data-toggle="modal" data-target="#TODO" id="btn_more" role="button">Trabalhe Connosco
+                  <a class="btn btn-primary btn-md" data-toggle="modal" data-target="#leave_contact" id="btn_more" role="button">Trabalhe Connosco
                     </a>                      
                 </div>
-
-
               </div>
 
             </div>
@@ -194,7 +205,7 @@
       </div>
       <div class="row">
         <div class="container button-container">
-          <button type="button" class="btn btn-secondary btn-lg">Trabalhe Connosco</button>
+          <button type="button" data-toggle="modal" data-target="#leave_contact" class="btn btn-secondary btn-lg">Trabalhe Connosco</button>
         </div>
       </div>
 
@@ -348,7 +359,7 @@
       </div>
       <br>
       <div class="container button-container">
-        <button type="button" class="btn btn-secondary btn-lg">Trabalhe Connosco</button>
+        <button type="button" data-toggle="modal" data-target="#leave_contact" class="btn btn-secondary btn-lg">Trabalhe Connosco</button>
       </div>
   
     </div>
@@ -421,108 +432,218 @@
       <div class="partners-overly"></div>
       <div class="container ">
         <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="section-headline text-center">
-              <h1>Parcerias</h1>
-              <br>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="section-headline">
+                <h3><strong>Parcerias</strong></h3>
+                <br>
             </div>
           </div>
+          <div class="col-md-6 col-sm-6 col-xs-12" style="border-left: 1px solid lightgrey">
+              <div class="section-headline">
+                <h3><strong>Prémios</strong></h3>
+                <br>
+              </div>
+            </div>
         </div>
         <div class="row" >
           <!-- Start contact icon column -->
-          <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="col-md-2 col-sm-2 col-xs-12">
             <div class="single-awesome-project">
               <div class="awesome-img">
-                <img src="./img/logo-uporto.png" alt="partner1" />
+                <img src="./img/logo-uporto.png" style="width:110px" alt="partner1" />
               </div>
             </div>
           </div>
           <!-- Start contact icon column -->
-          <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="col-md-2 col-sm-2 col-xs-12">
             <div class="awesome-img">
-              <img src="./img/logo-utaustin.png" alt="partner2" />
+              <img src="./img/logo-utaustin.png" style="width:110px" alt="partner2" />
             </div>
           </div>
           <!-- Start contact icon column -->
-          <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="col-md-2 col-sm-2 col-xs-12">
             <div class="awesome-img">
-              <img src="./img/logo-matter.png" alt="partner3" />
+              <img src="./img/logo-matter.png" style="width:110px" alt="partner3" />
             </div>
           </div>
+          <div class="col-md-2 col-sm-2 col-xs-12"  style="border-left: 1px solid lightgrey">
+              <div class="awesome-img">
+                <img src="./img/award1.png" style="width:110px" alt="partner3" />
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12">
+                <div class="awesome-img">
+                  <img src="./img/award2.png" style="width:110px" alt="partner3" />
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-2 col-xs-12">
+                  <div class="awesome-img">
+                    <img src="./img/award3.png" style="width:110px" alt="partner3" />
+                  </div>
+                </div>
           
         </div>
 
       </div>
     </div>
   </div>
-
-
-  <footer class="page-footer" style="margin-top: 5em">
-    <div class="container">
-      <div class="row" id="footer-row1">
-        <div class="col-lg-7">
-          <ul class="nav">
-            <li class="nav-footer">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-footer">
-              <a class="nav-link" href="#vision_container">A nossa Visão</a>
-            </li>
-            <li class="nav-footer">
-              <a class="nav-link" href="#info_map_container">A Rede</a>
-            </li>
-            <li class="nav-footer">
-              <a class="nav-link" href="become.html">Torne-se SmartClinic</a>
-            </li>
-
-          </ul>
-        </div>
-        <div class="col-lg-5">
-          <ul class="nav ">
-            <li class="nav-social-media">
-              <a class="nav-link  " href="https://instagram.com" target="_blank">
-                <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
-              </a>
-            </li>
-            <li class="nav-social-media">
-              <a class="nav-link" href="https://facebook.pt" target="_blank">
-                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-              </a>
-            </li>
-            <li class="nav-social-media">
-              <a class="nav-link" href="https://google.pt" target="_blank">
-                <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-              </a>
-            </li>
-          </ul>
-
+  <!-- Parceiros 
+  <div id="awards" class="partners-area" style="margin-top: 5em">
+      <div class="awards-inner area-padding">
+        <div class="awards-overly"></div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="section-headline text-center">
+                <h1>Prémios</h1>
+                <br>
+              </div>
+            </div>
+          </div>
+          <div class="row" >
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="single-awesome-project">
+                <div class="awesome-img">
+                  <img src="./img/award1.png" alt="award" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="awesome-img">
+                <img src="./img/award2.png" alt="award" />
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="awesome-img">
+                <img src="./img/award3.png" alt="partner3" />
+              </div>
+            </div>
+            
+          </div>
+  
         </div>
       </div>
-      <div class="row" id="footer-row2">
-        <div class="col-lg-12">
-          <ul class="nav">
-            <li class="nav-footer">
-              <a class="nav-link" href="#">Termos e Condições</a>
-            </li>
-            <li class="nav-footer">
-              <a class="nav-link" href="#">Politica de Privacidade e cookies</a>
-            </li>
-            <li class="nav-footer">
-              <p>| © 2018 Todos os direitos reservados
-              </p>
-            </li>
-          </ul>
+    </div>
+  -->
 
+  <!--  contacts modal   -->
+  <div class="modal fade" id="leave_contact">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Deixe-nos o seu contacto</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body ">
+              <p>Se está interessado e pretende aderir deixe-nos os seus dados e nós contactomo-lo</p>
+              <form method="POST" action="">
+                  <label for="name">Nome da Clinica</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="name">
+                        <i class="fa fa-building"></i>
+                      </span>
+                    </div>
+                    <input id="name" type="text" name="Clinicname" class="form-control" placeholder="Nome da Clinica" required autofocus>
+                  </div>
+                  <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="name">
+                          <i class="fas fa-user fa-fw"></i>
+                        </span>
+                      </div>
+                      <input id="name" type="text" name="Respname" class="form-control" placeholder="Nome do responsável" required autofocus>
+                    </div>
+                  <label for="number">Contactos</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="number">
+                        <i class="fas fa-phone"></i>
+                      </span>
+                    </div>
+                    <input id="number" type="text" name="number" class="form-control" placeholder="Número de telefone" required>
+            
+                  </div>
+                  <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="email">
+                          <i class="fas fa-envelope"></i>
+                        </span>
+                      </div>
+                      <input id="email" type="text" name="email" class="form-control" placeholder="email" required>
+                    </div>
+                  <hr>        
+                  <button type="submit" class="btn btn-block btn-success mb-2">Enviar</button>
+                </form>
+          </div>
         </div>
-
       </div>
     </div>
 
-
-  </footer>
-
-  <!-- Footer -->
-
+  <footer class="page-footer" style="margin-top:2em;">
+      <div class="container">
+        <div class="row" id="footer-row1">
+          <div class="col-lg-7">
+            <ul class="nav ">
+              <li class="nav-footer">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-footer">
+                <a class="nav-link" href="index.html">Visão</a>
+              </li>
+              <li class="nav-footer">
+                <a class="nav-link" href="index.html">Rede SmartClinic</a>
+              </li>
+              <li class="nav-footer">
+                <a class="nav-link" href="become.html">Torne-se SmartClinic</a>
+              </li>
+  
+            </ul>
+          </div>
+          <div class="col-lg-5">
+            <ul class="nav ">
+              <li class="nav-social-media">
+                <a class="nav-link  " href="https://instagram.com" target="_blank">
+                  <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+              </li>
+              <li class="nav-social-media">
+                <a class="nav-link" href="https://facebook.pt" target="_blank">
+                  <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+              </li>
+              <li class="nav-social-media">
+                <a class="nav-link" href="https://google.pt" target="_blank">
+                  <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+        <div class="row" id="footer-row2">
+          <div class="col-lg-12">
+            <ul class="nav">
+              <li class="nav-footer">
+                <a class="nav-link" href="#">Termos e Condições</a>
+              </li>
+              <li class="nav-footer">
+                <a class="nav-link" href="#">Politica de Privacidade e cookies</a>
+              </li>
+              <li class="nav-footer">
+                <p>| © 2018 Todos os direitos reservados
+                </p>
+              </li>
+            </ul>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+  
+    </footer>
 
 
 

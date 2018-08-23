@@ -298,7 +298,7 @@ function myMap() {
   //TO show INFO WINDOW about the clinic
     var contentString = 
     '<div id="content">'+
-        '<h6 id="firstHeading" class="firstHeading">Clinica Ferreira Borges </h6>'+
+        '<a class="link" href="clinicProfile.html" ><h6 id="firstHeading" class="firstHeading">Clinica Ferreira Borges </h6> </a>'+
         '<div id="bodyContent">'+
           '<p>'+
               ' Nºde telefone:91254444 '+ '<br>'+
