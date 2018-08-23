@@ -307,6 +307,7 @@ padding: 11px;
     padding: 33px;
     text-align: left;
     font-weight: bold;
+    width: 77%;/***/
     
    }
  
@@ -335,7 +336,6 @@ padding: 11px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 77%;/***/
   }
  #seta  {
    padding-top: 15px;
