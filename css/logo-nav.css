@@ -318,11 +318,7 @@ padding: 11px;
     width:75%;
   }
 
-  #about .container-box {
-    border: 2px solid #ffd43f;
-    padding:22px;
-    
-  }
+  
   #about  li {
     list-style-image: url('../img/checked.png');
     padding:5px;
@@ -331,22 +327,7 @@ padding: 11px;
  #about{
    padding-top:0px; 
  }
- /**
- ul { padding-left:20px; list-style:none; }
- li { margin-bottom:10px; }
- li:before {    
-     font-family: 'FontAwesome';
-     content: '\f058';
-     margin:0 5px 0 -15px;
- }
-
-li::before {
-  content: "\f00c";
-  color: #ffd43f;
-  font-size: 66px;
-  font-family: 'Font Awesome\ 5 Free';
-}
-*/
+ 
 
   #about .row{
     text-align: justify;
