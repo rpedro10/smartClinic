@@ -307,11 +307,12 @@ padding: 11px;
     padding: 33px;
     text-align: left;
     font-weight: bold;
-    width: 77%;/***/
-    
+   width: 77%; /***/
+   
    }
  
   #services{
+    
     text-align: center;
     
   }
