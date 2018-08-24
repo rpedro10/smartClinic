@@ -320,7 +320,7 @@ padding: 11px;
     
   }
   #services .container{
-    width:75%;
+  /**  width:75%;*/
   }
 
   #about .container-box {
@@ -515,14 +515,22 @@ background-color:white ;
       color:black;
       text-decoration: none;
     }
-/**
-    #partners .container, #awards .container{
-      width:55%;
+
+  
+    #service1:hover::after {
+      content: "Fazemos com que a sua empresa tenha uma presença online consistente, com notoriedade e reputação positiva" ;
+
+    } #service3 small{
+      display: none;
     }
-    #awards .container{
-      width:50%
+
+    #service3:hover small {
+      display:block;
     }
-    */
+  #service1:hover{
+    background-color: lightblue;
+    
+  }
 
   /****   BECOME PAGE    ***/
 
