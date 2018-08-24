@@ -615,11 +615,3 @@ width:66%;
   background-color:grey;
   
 }
-.row-black{
-  overflow: hidden; 
-}
-
-[class*="col-"]{
-  margin-bottom: -99999px;
-  padding-bottom: 99999px;
-}
