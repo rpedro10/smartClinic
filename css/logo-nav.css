@@ -358,7 +358,7 @@ li::before {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 77%;/***/
+   /* width: 77%;/***/
   }
  #seta  {
    padding-top: 15px;
@@ -515,25 +515,28 @@ background-color:white ;
       color:black;
       text-decoration: none;
     }
-
+/**
     #service1:hover::after {
       content: "Fazemos com que a sua empresa tenha uma presença online consistente, com notoriedade e reputação positiva" ;
 
-    }
+    }*/
+    /**
      #service3 small{
       display: none;
-    }
+    }*/
 
-    #service3:hover small {
-      display:block;
+    #services small {
+      display:block;  
     }
+  /**  
   #service1:hover{
     background-color: rgba(203, 153, 4, 0.55);;
     
   }
+  
   #service4:hover::after {
     content: "Fazemos com que a sua empresa tenha uma presença online consistente, com notoriedade e reputação positiva" ;
-  }
+  }*/
 
   /****   BECOME PAGE    ***/
 
@@ -589,3 +592,34 @@ width:66%;
 }
 
 /***END profile page***********
+
+/*** OUTSIDE CLINIC PROFILE ****/
+
+  .list-especialidades {
+    list-style-type: disc;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    list-style-position: inside;
+}
+
+#clinicInfo .container-yellow{
+
+  padding:11px;
+  background-color: #ffd43f;
+}
+#clinicInfo .col-yellow{
+  
+  }
+#clinicInfo .container-black{
+  background-color:grey;
+  
+}
+.row-black{
+  overflow: hidden; 
+}
+
+[class*="col-"]{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
