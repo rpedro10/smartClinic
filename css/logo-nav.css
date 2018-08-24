@@ -516,11 +516,11 @@ background-color:white ;
       text-decoration: none;
     }
 
-  
     #service1:hover::after {
       content: "Fazemos com que a sua empresa tenha uma presença online consistente, com notoriedade e reputação positiva" ;
 
-    } #service3 small{
+    }
+     #service3 small{
       display: none;
     }
 
@@ -528,8 +528,11 @@ background-color:white ;
       display:block;
     }
   #service1:hover{
-    background-color: lightblue;
+    background-color: rgba(203, 153, 4, 0.55);;
     
+  }
+  #service4:hover::after {
+    content: "Fazemos com que a sua empresa tenha uma presença online consistente, com notoriedade e reputação positiva" ;
   }
 
   /****   BECOME PAGE    ***/
