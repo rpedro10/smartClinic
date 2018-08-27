@@ -16,7 +16,7 @@
 
 
 body {
-  padding-top: 54px;
+  padding-top: 60px; 
   text-align: justify;
   text-justify: inter-word;
   
@@ -27,8 +27,6 @@ body {
       font-family: 'Source Sans Pro', sans-serif;*/
       font-family: 'Montserrat', sans-serif;
       
-      padding-top: 65px; 
-
 }
 h1{
   font-weight: 900;
@@ -39,13 +37,17 @@ h2{
 }
 @media (min-width: 992px) {
   body {
-    padding-top: 56px;
+    padding-top: 60px;
 
   }
+  @media screen and (min-width: 768px) {
+    body { padding-top: 60px; }
+}
   
 }
+/**@media (min-width: 980px) { body { padding-top: 70px; } }
 
-/**  HOMEPAGE **/
+  HOMEPAGE **/
 /**slider*/
 
 /**navbar**/
@@ -150,6 +152,12 @@ color:black;
     border-bottom-right-radius: 8px;
   }
 
+  col-clinicList{
+    padding-right:0px;
+    padding-left: 0px;
+
+  }
+
 
 /***buttons ***/
 
@@ -157,23 +165,18 @@ color:black;
 
 #call:hover,#appointment:hover{
 background-color: white;
-background-repeat:no-repeat;
-border: 2px solid white; /* Green */
-cursor:pointer;
-overflow: hidden;
-outline:none;
-color:black;
+color:rgb(59, 59, 59);
 }
+
 #call,#appointment{
   background-color: Transparent;
-  background-repeat:no-repeat;
-  border: 2px solid white; /* Green */
+   border: 2px solid white; /* Green */
+  color:white;
   cursor:pointer;
   overflow: hidden;
   outline:none;
-   width:100%;
   align-content: center;
-  color:black;
+  width:100%;
   /**
   color: -webkit-gradient(linear, left top, left bottom, from(red), to(yellow));
   background-image: -webkit-linear-gradient(top, red, blue);
@@ -200,8 +203,6 @@ color:black;
 /*** A NOSSA VISAO **/
 #vision_container,#vision_head,#sub_head{
   text-align: center;
-  width:100%;
-  
 }
 
 #vision_container .checklist-row{
