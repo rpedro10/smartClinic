@@ -603,15 +603,72 @@ width:66%;
     list-style-position: inside;
 }
 
+
+
+  
+
 #clinicInfo .container-yellow{
 
   padding:11px;
   background-color: #ffd43f;
-}
-#clinicInfo .col-yellow{
+  font-weight: bold;
   
-  }
+}
+#clinicInfo .col-yellow ,#clinicInfo .col-black{
+  padding-left:0px;
+  padding-right:4px;
+  
+  
+}
+
 #clinicInfo .container-black{
-  background-color:grey;
+  background-color:rgb(59, 59, 59);
+  color:white;
+  min-height: 93px;
+  padding-top:11px;
+  padding-bottom: 11px;
+}
+#clinicInfo .nav-social-media a{
+  color:rgb(59, 59, 59);
+}
+#clinicInfo li{
+  padding:8px;
+}
+#clinicInfo .row-white .btn {
+background-color:rgb(59, 59, 59);
+border-radius: 0px;
+
+}
+#clinicInfo .row-white {
+  background-color: lightgrey;
+  padding-top: 15px;
   
 }
+#seguros_especialidades .container-seguros{
+  border: 1px solid #ffd43f;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 22px;
+  
+}
+#seguros_especialidades .row-title{
+ background-color:lightgray;
+ text-align: center;
+ padding:11px;
+ padding-left:33px;
+  
+}
+#seguros_especialidades .row-title2{
+  background-color:rgb(59, 59, 59);
+  text-align: center;
+  padding:11px;
+  
+  padding-left:33px;
+  color:#ffd43f;
+   
+ }
+ #seguros_especialidades .col-especialidades{
+
+  padding-left:44px;
+ }
+  
