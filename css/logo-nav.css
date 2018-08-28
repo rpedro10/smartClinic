@@ -160,18 +160,23 @@ color:black;
 
 
 /***buttons ***/
-
+.vision-icon{
+  border: 1px solid #ffd43f;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 22px;
+  
+}
 
 
 #call:hover,#appointment:hover{
-background-color: white;
-color:rgb(59, 59, 59);
+background-color: rgb(59, 59, 59,0.11);
 }
 
 #call,#appointment{
-  background-color: Transparent;
+  background-color: white;
+  color:rgb(59, 59, 59);
    border: 2px solid white; /* Green */
-  color:white;
   cursor:pointer;
   overflow: hidden;
   outline:none;
@@ -669,7 +674,6 @@ border-radius: 0px;
    
  }
  #seguros_especialidades .col-especialidades{
-
   padding-left:44px;
  }
   
