@@ -152,10 +152,10 @@ color:black;
     border-bottom-right-radius: 8px;
   }
 
-  col-clinicList{
+  #col-clinicList{
     padding-right:0px;
     padding-left: 0px;
-
+    background-color: #ffd43f;   
   }
 
 
@@ -206,20 +206,26 @@ background-color: rgb(59, 59, 59,0.11);
 /*** end LOGIN PAGE*/
 
 /*** A NOSSA VISAO **/
-#vision_container,#vision_head,#sub_head{
-  text-align: center;
+ .title1{
+background-color:white;
+margin-bottom: 0px;
+padding-right:12px;
+  
+}
+ .title2{
+  color:#ffd43f;
+  margin-bottom:0px;
+  padding-left:12px;
+  
+}
+.row-header{
+  background-color:rgb(59,59,59);
 }
 
-#vision_container .checklist-row{
-  padding:33px;
-  text-align: justify;
-}
-#vision_container .checklist-row ul {
-  list-style-type: none;
-padding: 22px;  
-}
-#vision_container .checklist-row ul li {
-padding: 11px;  
+
+#vision_container {
+  text-align: center;
+  
 }
 
 

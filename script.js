@@ -1,50 +1,12 @@
 
- /**
-  $(document).ready(function(){
-  var form = document.getElementById("select-clinic");
-  console.log(form);
-  if(form){
-    let option = form.options[form.selectedIndex].text;
-    console.log(option);      
-    changeMap(option);
-    form.addEventListener("change", function() {
-      let option = form.options[form.selectedIndex].text;
-      console.log(option);      
-      //changeMap(option);
-      changeFocus();
-      
-  });
-
-
-  }
-});
-
-*/
 /**
  * Coimbra coords:
  * 40.2030616,-8.4356745
  */
 
-/** 
-clinics.addEventListener("change", function() {
-  console.log(clinics.value );
-});*/
 
-/** OLD WAY OF CHANGING MAPS
-map2="<div class='map-responsive' id='map2'>"+
-
-"<iframe id='frame2'src='https://snazzymaps.com/embed/87379' width='100%' height='432px' style='border:none;'></iframe> "
-+                 
-"</div>  ";
-map1="<div class='map-responsive' id='map1'>"+
-
-"<iframe id='frame1' src='https://snazzymaps.com/embed/86952' width='100%' height='432px' style='border:none;'></iframe> "
-+                 
-"</div>  ";
-*/
 $(document).ready(function(){ //scroll in the homepage
   // from: https://www.w3schools.com/bootstrap/bootstrap_ref_js_scrollspy.asp
-
   // Add scrollspy to <body>
   $('body').scrollspy({target: ".navbar", offset: 50});   
 
@@ -62,7 +24,7 @@ $(document).ready(function(){ //scroll in the homepage
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 1000, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
