@@ -136,90 +136,18 @@
     </div>
   </div>
 
-
-  <div class="modal fade" id="add_appointment">
-    <div class="modal-dialog modal-dialog-centered modal-md">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Marcação de Consulta</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body ">
-          <form>
-            <label for="name">Nome</label>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend">
-                <span class="input-group-text">
-                  <i class="fas fa-user fa-fw"></i>
-                </span>
-              </div>
-              <input id="name" type="text" name="name" class="form-control" placeholder="Nome do utente" required autofocus>
-            </div>
-            <label for="number">Contactos</label>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend">
-                <span class="input-group-text">
-                  <i class="fas fa-phone"></i>
-                </span>
-              </div>
-              <input id="number" type="text" name="number" class="form-control" placeholder="Número de telefone" required>
-
-            </div>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend">
-                <span class="input-group-text">
-                  <i class="fas fa-envelope"></i>
-                </span>
-              </div>
-              <input id="email" type="text" name="email" class="form-control" placeholder="email" required>
-            </div>
-            <label for="date">Data</label>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend">
-                <span class="input-group-text">
-                  <i class="fas fa-calendar-alt fa-fw"></i>
-                </span>
-              </div>
-              <input type="datetime-local" id="date" class="form-control">
-            </div>
-            <label for="form-select-clinic-modal">Escolha a Clínica</label>
-            <select id="form-select-clinic-modal" class="form-control">
-              <option selected>Clinica Ferreira Borges</option>
-              <option>Clinica X</option>
-              <option>Cllinica Y</option>
-              <option>...</option>
-            </select>
-            <hr>
-            <button type="submit" class="btn btn-block btn-success mb-2">Marcar Consulta</button>
-          </form>
-
-        </div>
+<br>
+<div class="main">
+    <div class="row row-header" >
+        <h1 class=" title1"style="padding-left: 120px;"  >A nossa</h1>
+        <h1 class="title2" > Visão </h1>
+        
       </div>
-    </div>
-  </div>
 
-  <div class="modal fade" id="make_call">
-    <div class="modal-dialog modal-dialog-centered modal-md">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Linha Smart</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body ">
-          <p>O numero de telefone da clinica Ferreira Borges é:</p>
-          <p>218 091 546 / 935 189 807 </p>
-          <button type="button" class="btn btn-block btn-success mb-1" onclick="">Ligar</button>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
 
   <div class="container" id="vision_container" style="margin-top:4em">
     <div class="container">
-        <h1>A nossa <span style="color:#ffd43f">Visão</span>
           
     </div>
     </h1>
@@ -245,7 +173,7 @@
           <img src="./img/icon1.png" width="55" alt="vision-icon1">
           <br>
           <br>
-          <div class="text" style="background-color:lightgrey">
+          <div class="text">
             <h6> Estabelecemos critérios de qualidade de excelência no atendimento, acessibilidade e satisfação nos serviços oferecidos
             </h6>
           </div>
@@ -309,7 +237,7 @@
               </select>
             </form>
             <br>
-            <a class="btn btn-primary" id="btn_find" onclick="getLocation()" role="button">Descubra a Clinica mais perto de si!
+            <a class="btn btn-primary btn-block" id="btn_find" onclick="getLocation()" role="button">Descubra a Clinica mais perto de si!
               <i class="fas fa-map-marker-alt fa-fw"></i>
             </a>
         </div>
@@ -318,16 +246,15 @@
         <div class="container">
           <div class="row">
             <div class="col-6">
-              <a class="btn btn-primary btn-md" href="#" data-toggle="modal" data-target="#make_call" id="call" role="button">
+              <a class="btn btn-primary btn-block btn-md" href="#" data-toggle="modal" data-target="#make_call" id="call" role="button">
                 <i class="fa fa-phone fa-3x"></i>
                 <br>
                 <strong>Linha Smart</strong>
               </a>
             </div>
             <div class="col-6">
-              <a class="btn btn-secondary btn-md" href="#" data-toggle="modal" data-target="#add_appointment" id="appointment" role="button">
+              <a class="btn btn-secondary btn-block btn-md" href="#" data-toggle="modal" data-target="#add_appointment" id="appointment" role="button">
                 <i class="fas fa-calendar-alt fa-3x"></i>
-                <br>
                 <br>
                 <strong>Marcação Online</strong>
               </a>
@@ -438,6 +365,87 @@
             </a>-->
     </div>
   </div>
+
+
+  <div class="modal fade" id="add_appointment">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+  
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Marcação de Consulta</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body ">
+            <form>
+              <label for="name">Nome</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-user fa-fw"></i>
+                  </span>
+                </div>
+                <input id="name" type="text" name="name" class="form-control" placeholder="Nome do utente" required autofocus>
+              </div>
+              <label for="number">Contactos</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-phone"></i>
+                  </span>
+                </div>
+                <input id="number" type="text" name="number" class="form-control" placeholder="Número de telefone" required>
+  
+              </div>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+                <input id="email" type="text" name="email" class="form-control" placeholder="email" required>
+              </div>
+              <label for="date">Data</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-calendar-alt fa-fw"></i>
+                  </span>
+                </div>
+                <input type="datetime-local" id="date" class="form-control">
+              </div>
+              <label for="form-select-clinic-modal">Escolha a Clínica</label>
+              <select id="form-select-clinic-modal" class="form-control">
+                <option selected>Clinica Ferreira Borges</option>
+                <option>Clinica X</option>
+                <option>Cllinica Y</option>
+                <option>...</option>
+              </select>
+              <hr>
+              <button type="submit" class="btn btn-block btn-success mb-2">Marcar Consulta</button>
+            </form>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="modal fade" id="make_call">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Linha Smart</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body ">
+            <p>O numero de telefone da clinica Ferreira Borges é:</p>
+            <p>218 091 546 / 935 189 807 </p>
+            <button type="button" class="btn btn-block btn-success mb-1" onclick="">Ligar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   <!--  Footer -->

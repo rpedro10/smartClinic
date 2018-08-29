@@ -122,7 +122,6 @@ padding-right: 0px;
  
 
 #btn_find{
-  width:100%;
   background-color: lightgray;
   background-repeat:no-repeat;
   border: 2px solid lightgray; /* Green */
@@ -155,17 +154,20 @@ color:black;
   #col-clinicList{
     padding-right:0px;
     padding-left: 0px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
     background-color: #ffd43f;   
   }
 
 
 /***buttons ***/
 .vision-icon{
+  /*
   border: 1px solid #ffd43f;
   padding-right: 0px;
   padding-left: 0px;
   padding-top: 22px;
-  
+  */
 }
 
 
@@ -181,7 +183,6 @@ background-color: rgb(59, 59, 59,0.11);
   overflow: hidden;
   outline:none;
   align-content: center;
-  width:100%;
   /**
   color: -webkit-gradient(linear, left top, left bottom, from(red), to(yellow));
   background-image: -webkit-linear-gradient(top, red, blue);
@@ -564,12 +565,17 @@ background-color:white ;
   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
 
-.panel-footer .btn:hover {
+.card .btn:hover {
   border: 1px solid #ffd43f;
-  background-color: #fff !important;
-  color: #ffd43f;
+  background-color: white !important;
+  color: black;
 }
-
+.card .btn   {
+  border: 1px solid #ffd43f;
+  background-color: #ffd43f !important;
+  color:black;
+}
+/**
 .panel-heading {
   color: #fff !important;
   background-color: #ffd43f !important;
@@ -603,6 +609,7 @@ width:66%;
 
 }
 
+*/
 /***END profile page***********
 
 /*** OUTSIDE CLINIC PROFILE ****/
