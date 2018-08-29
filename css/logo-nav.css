@@ -173,7 +173,7 @@ color:black;
 
 
 #call:hover,#appointment:hover{
-background-color: rgb(59, 59, 59,0.11);
+background-color: rgba(59, 59, 59,0.11);
 }
 
 #call,#appointment{
@@ -504,7 +504,7 @@ background-color:white ;
     }
    
 
-    #btn_more{
+    .btn_more{
       background-color: Transparent;
       background-repeat:no-repeat;
       border: 2px solid white; /* Green */
@@ -513,7 +513,7 @@ background-color:white ;
       outline:none;
       color:white;
     }
-    #btn_more:hover{
+    .btn_more:hover{
       background-color: white;
       background-repeat:no-repeat;
       border: 2px solid white; /* Green */
@@ -555,7 +555,7 @@ background-color:white ;
   /****   BECOME PAGE    ***/
 
 /*****USER PROFILE PAGE **/
-
+/**
 .panel {
   border: 1px solid #ffd43f;
   border-radius:0;
@@ -565,13 +565,14 @@ background-color:white ;
 .panel:hover {
   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
+*/
 
-.card .btn:hover {
+#packs .card .btn:hover {
   border: 1px solid #ffd43f;
   background-color: white !important;
   color: black;
 }
-.card .btn   {
+#packs .card .btn   {
   border: 1px solid #ffd43f;
   background-color: #ffd43f !important;
   color:black;
@@ -617,9 +618,9 @@ width:66%;
 
   .list-especialidades {
     list-style-type: disc;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    columns: 2;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
     list-style-position: inside;
 }
 

@@ -39,7 +39,6 @@
 
 <body>
 
-
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top">
         <div class="container">
@@ -54,15 +53,15 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-vision">
-                        <a id="vision" class="nav-link" href="#vision_container">A NOSSA VISÃO</a>
+                        <a id="vision" class="nav-link" href="index.html"> VISÃO</a>
                     </li>
                     <li class="nav-network">
-                        <a id="network" class="nav-link" href="#info_map_container">A REDE </a>
+                        <a id="network" class="nav-link" href="index.html">ENCONTRE UMA SMARTCLINIC </a>
                     </li>
-                    <li class="nav-becoming">
-                        <a id="become" class="nav-link" href="become.html">TORNE-SE SMARTCLINIC</a>
-                    </li>
-                    <!--
+                    <!--   <li class="nav-becoming">
+                <a id="become" class="nav-link" href="become.html">TORNE-SE SMARTCLINIC</a>
+              </li>
+            
                  <li class="nav-login">
                   <a class="nav-link" href="#" >
                   <i class="fas fa-sign-in-alt fa-fw"></i> Login </a>             
@@ -76,8 +75,6 @@
         <a class="nav-link" id="nav-login" href="login.html">
             <i class="fas fa-sign-in-alt fa-fw"></i> Login </a>
     </nav>
-
-
 
 
 
@@ -128,7 +125,6 @@
                     <div class="row">
                         <div class="col-lg-3 col-yellow">
                             <div class="container container-yellow text-right">
-                                </i>
                                 <span> Email </span>
                                 <i class="fa fa-envelope"></i>
 
@@ -230,12 +226,12 @@
                                     </a>
                                 </li>
                                 <li class="nav-btn">
-                                    <a class="btn btn-secondary btn-md" href="#" data-toggle="modal" data-target="#make_call" id="" role="button">Linha Smart
+                                    <a class="btn btn-secondary btn-md" href="#" data-toggle="modal" data-target="#make_call" role="button">Linha Smart
                                     </a>
                                     <br>
                                 </li>
                                 <li class="nav-btn">
-                                    <a class="btn btn-secondary btn-md" href="#" data-toggle="modal" data-target="#add_appointment" id="" role="button">Marcação Online
+                                    <a class="btn btn-secondary btn-md" href="#" data-toggle="modal" data-target="#add_appointment" role="button">Marcação Online
                                     </a>
                                 </li>
                             </ul>
@@ -319,7 +315,7 @@
     <div class="container" id="seguros_especialidades" style="margin-top:3em">
         <!--<div class="jumbotron jumbotron-fluid">-->
         <div class="row">
-            <div class="col-lg-4 col-xs-12 col-md-4">
+            <div class="col-lg-3 col-xs-12 col-md-4">
                 <div class="container container-seguros">
                     <div class="row row-title">
                         <h3>
@@ -328,7 +324,7 @@
 
                     </div>
                     <br>
-                    
+
                     <div class="row">
                         <div class="container list-container">
                             <ul class="list-seguros">
@@ -342,31 +338,30 @@
 
                 </div>
             </div>
-            <div class="col-lg-8 col-xs-12 col-md-8 col-especialidades">
+            <div class="col-lg-9 col-xs-12 col-md-8 col-especialidades">
                 <div class="container container-seguros">
                     <div class="row row-title2">
                         <h3>
                             <strong>Especialidades</strong>
-                        </h3>                       
+                        </h3>
                     </div>
+                    <br>
                     <div class="row">
-                        <div class="container">
-                                <br>
-                            <ul class="list-especialidades">
-                                <li>Oclusão</li>
-                                <li>Endodontia</li>
-                                <li> Higiene Oral</li>
-                                <li>Implantologia </li>
-                                <li>Ortodontia</li>
-                                <li>Odontopediatria</li>
-                                <li> Periodontologia</li>
-                                <li>Prostodontia </li>
-                                <li>Prostodontia</li>
-                                <li> Cirurgia Oral</li>
-                                <li> Medicina e Patologia Oral</li>
-                                <li>Estética Dentária </li>
-                            </ul>
-                        </div>
+
+                        <ul class="list-especialidades">
+                            <li>Oclusão</li>
+                            <li>Endodontia</li>
+                            <li> Higiene Oral</li>
+                            <li>Implantologia </li>
+                            <li>Ortodontia</li>
+                            <li>Odontopediatria</li>
+                            <li> Periodontologia</li>
+                            <li>Prostodontia </li>
+                            <li>Prostodontia</li>
+                            <li> Cirurgia Oral</li>
+                            <li> Medicina e Patologia Oral</li>
+                            <li>Estética Dentária </li>
+                        </ul>
                     </div>
 
 
@@ -623,78 +618,78 @@
     -->
 
     <div class="modal fade" id="add_appointment">
-            <div class="modal-dialog modal-dialog-centered modal-md">
-        
-              <!-- Modal content-->
-              <div class="modal-content">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+
+            <!-- Modal content-->
+            <div class="modal-content">
                 <div class="modal-header">
-                  <h4 class="modal-title">Marcação de Consulta</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Marcação de Consulta</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body ">
-                  <form>
-                    <label for="name">Nome</label>
-                    <div class="input-group mb-2">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">
-                          <i class="fas fa-user fa-fw"></i>
-                        </span>
-                      </div>
-                      <input id="name" type="text" name="name" class="form-control" placeholder="Nome do utente" required autofocus>
-                    </div>
-                    <label for="number">Contactos</label>
-                    <div class="input-group mb-2">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">
-                          <i class="fas fa-phone"></i>
-                        </span>
-                      </div>
-                      <input id="number" type="text" name="number" class="form-control" placeholder="Número de telefone" required>
-        
-                    </div>
-                    <div class="input-group mb-2">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">
-                          <i class="fas fa-envelope"></i>
-                        </span>
-                      </div>
-                      <input id="email" type="text" name="email" class="form-control" placeholder="email" required>
-                    </div>
-                    <label for="date">Data</label>
-                    <div class="input-group mb-2">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">
-                          <i class="fas fa-calendar-alt fa-fw"></i>
-                        </span>
-                      </div>
-                      <input type="datetime-local" id="date" class="form-control">
-                    </div>
-                   
-                    <hr>
-                    <button type="submit" class="btn btn-block btn-success mb-2">Marcar Consulta</button>
-                  </form>
-        
+                    <form>
+                        <label for="name">Nome</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-user fa-fw"></i>
+                                </span>
+                            </div>
+                            <input id="name" type="text" name="name" class="form-control" placeholder="Nome do utente" required autofocus>
+                        </div>
+                        <label for="number">Contactos</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-phone"></i>
+                                </span>
+                            </div>
+                            <input id="number" type="text" name="number" class="form-control" placeholder="Número de telefone" required>
+
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
+                            <input id="email" type="text" name="email" class="form-control" placeholder="email" required>
+                        </div>
+                        <label for="date">Data</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-calendar-alt fa-fw"></i>
+                                </span>
+                            </div>
+                            <input type="datetime-local" id="date" class="form-control">
+                        </div>
+
+                        <hr>
+                        <button type="submit" class="btn btn-block btn-success mb-2">Marcar Consulta</button>
+                    </form>
+
                 </div>
-              </div>
             </div>
-          </div>
-        
-          <div class="modal fade" id="make_call">
-            <div class="modal-dialog modal-dialog-centered modal-md">
-              <!-- Modal content-->
-              <div class="modal-content">
+        </div>
+    </div>
+
+    <div class="modal fade" id="make_call">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <!-- Modal content-->
+            <div class="modal-content">
                 <div class="modal-header">
-                  <h4 class="modal-title">Linha Smart</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Linha Smart</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body ">
-                  <p>O numero de telefone da clinica Ferreira Borges é:</p>
-                  <p>218 091 546 / 935 189 807 </p>
-                  <button type="button" class="btn btn-block btn-success mb-1" onclick="">Ligar</button>
+                    <p>O numero de telefone da clinica Ferreira Borges é:</p>
+                    <p>218 091 546 / 935 189 807 </p>
+                    <button type="button" class="btn btn-block btn-success mb-1" onclick="">Ligar</button>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
+    </div>
 
 
 
