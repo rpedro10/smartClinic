@@ -16,7 +16,7 @@
 
 
 body {
-  padding-top: 60px; 
+  padding-top: 50px; 
   text-align: justify;
   text-justify: inter-word;
   
@@ -37,14 +37,13 @@ h2{
 }
 @media (min-width: 992px) {
   body {
-    padding-top: 60px;
+    padding-top: 50px;
 
   }
-  @media screen and (min-width: 768px) {
-    body { padding-top: 60px; }
-}
   
 }
+
+
 /**@media (min-width: 980px) { body { padding-top: 70px; } }
 
   HOMEPAGE **/
@@ -55,13 +54,27 @@ h2{
   color:rgb(59, 59, 59);
   font-size: small;
   font-weight: bold;
-  
 }
+
 #nav-login{
   background-color:rgb(59, 59, 59);
   color:white;
   font-size: small;
-padding:16px;   
+  padding:18px;
+}
+
+.nav-item0{
+  padding-top:18px;
+  padding-left: 10px;
+}
+.nav-item1{
+  padding-top:18px;
+  padding-left: 10px;
+}
+.nav-item2{
+  padding-top:18px;
+  padding-right:55px;
+  padding-left: 10px;
   
 }
 
@@ -623,6 +636,10 @@ width:66%;
     list-style-position: inside;
 }
 
+.container-clinicName{
+  background-color: lightgrey;
+   padding:22px;
+}
 
 
   
@@ -663,6 +680,7 @@ border-radius: 0px;
   background-color: lightgrey;
   padding-top: 15px;
   
+  
 }
 #seguros_especialidades .container-seguros{
   border: 1px solid #ffd43f;
@@ -687,7 +705,7 @@ border-radius: 0px;
   color:#ffd43f;
    
  }
- #seguros_especialidades .col-especialidades{
+ #seguros_especialidades .col-especialidades{  
   padding-left:44px;
  }
   

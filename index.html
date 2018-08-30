@@ -69,41 +69,40 @@
 
       </div>
 
-    </div><!--
+    </div>
     <a class="nav-link" id="nav-login" href="login.html">
-      <i class="fas fa-sign-in-alt fa-fw"></i> Login </a>-->
+      <i class="fas fa-sign-in-alt fa-fw"></i> Login </a>
   </nav>-->
 
-  <nav  id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top">
-      <a class="navbar-brand" href="index.html">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top">
+      <a class="navbar-brand offset-1" href="index.html">
           <img src="./img/logo.png" width="180" height="40" alt="">
-        </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <br>
-        
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a id="vision" class="nav-link" href="#vision_container"> VISÃO</a>                
-              </li>
-          <li class="nav-item">
-              <a id="network" class="nav-link" href="#info_map_container">ENCONTRE UMA SMARTCLINIC </a>
-              
-          </li>
-          <li class="nav-item"  id="nav-login" >
-              <a class="nav-link" href="login.html">
-                  <i class="fas fa-sign-in-alt fa-fw"></i> Login </a>
-        </ul>
-      </div>
-      </div>
-    </nav>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <br>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item1">
+          <a id="vision" class="nav-link" href="#vision_container"> VISÃO</a>
+        </li>
+        <li class="nav-item2">
+          <a id="network" class="nav-link" href="#info_map_container">ENCONTRE UMA SMARTCLINIC </a>
+
+        </li>
+        <li class="nav-item3" id="nav-login">
+          <a class="nav-link" href="login.html">
+            <i class="fas fa-sign-in-alt fa-fw"></i> Login </a>
+      </ul>
+    </div>
+  </nav>
 
 
 
   <!-- Page Content -->
-  <div class="main" style=" ">
+  <div class="main">
     <!--container retirado-->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -111,7 +110,7 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner" style="width:100%">
+      <div class="carousel-inner w-100  ">
         <div class="carousel-item active">
           <img class="d-block w-100" src="./img/slide1.png " alt="First slide">
           <div class="carousel-caption" id="caption1">
@@ -158,29 +157,6 @@
       </a>
     </div>
   </div>
-
-  <br>
-
-
-  <br>
-  <!--
-    <div class="main">
-        <div class="container container-fluid">
-            
-        <div class="row row-header " style="padding:0px">
-              <h1 class="text-left title1"  style=""   >A nossa</h1>
-              
-              <h1 class="title2" > Visão </h1>
-         
-            
-          </div>
-    
-    </div>
-  -->
-
-
-
-
 
   <div class="container" id="vision_container" style="margin-top:4em">
     <div class="row row-header">
@@ -259,19 +235,19 @@
         <br>
         <div class="container">
           <h5 class="text-left">Encontre a SmartClinic mais perto de si: </h5>
-            <br>
-            <form id="form-select-clinic">
-              <label> Lista das Clínicas:</label>
-              <select id="select-clinic" class="form-control">
-                <option value="0">escolha a clinica</option>
-                <option value="1">Clinica X</option>
-                <option value="2">Clinica Ferreira Borges</option>
-              </select>
-            </form>
-            <br>
-            <a class="btn btn-primary btn-block" id="btn_find" onclick="getLocation()" role="button">Descubra a Clinica mais perto de si!
-              <i class="fas fa-map-marker-alt fa-fw"></i>
-            </a>
+          <br>
+          <form id="form-select-clinic">
+            <label> Lista das Clínicas:</label>
+            <select id="select-clinic" class="form-control">
+              <option value="0">escolha a clinica</option>
+              <option value="1">Clinica X</option>
+              <option value="2">Clinica Ferreira Borges</option>
+            </select>
+          </form>
+          <br>
+          <a class="btn btn-primary btn-block" id="btn_find" onclick="getLocation()" role="button">Descubra a Clinica mais perto de si!
+            <i class="fas fa-map-marker-alt fa-fw"></i>
+          </a>
         </div>
         <br>
         <br>

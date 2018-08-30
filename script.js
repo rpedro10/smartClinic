@@ -11,7 +11,7 @@ $(document).ready(function(){ //scroll in the homepage
   $('body').scrollspy({target: ".navbar", offset: 50});   
 
   // Add smooth scrolling on all links inside the navbar
-  $("#navbarResponsive a").on('click', function(event) {
+  $("#navbar a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -260,19 +260,15 @@ function myMap() {
   //TO show INFO WINDOW about the clinic
     var contentString = 
     '<div id="content">'+
-        '<a class="link" href="clinicProfile.html" ><h6 id="firstHeading" class="firstHeading">Clinica Ferreira Borges </h6> </a>'+
+        '<a class="link" role="button" href="clinicProfile.html" ><h6 id="firstHeading" class="firstHeading">Clinica Ferreira Borges </h6> </a>'+
         '<div id="bodyContent">'+
           '<p>'+
               ' Nºde telefone:91254444 '+ '<br>'+
               'RUA FERREIRA BORGES 113C ,1234-130 LISBOA '+
-          '</p>'+
+          '</p>'+          '<a class="btn btn-secondary btn-sm" href="clinicProfile.html" role="button">Mais Informação</a>'
++          
         '</div>'+
-        '<div   id="btns_row">'+
-          '<a class="btn btn-default btn-ms" href="#" data-toggle="modal" data-target="#make_call" id="" role="button">Marcação Online</a>'
-           +
-           '<a class="btn btn-default" href="#" data-toggle="modal" data-target="#add_appointment" id="" role="button">Linha Smart</a>'
-           +
-        '</div>'+
+        
     '</div>';
   
     /**

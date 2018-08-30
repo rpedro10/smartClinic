@@ -40,199 +40,40 @@
 <body>
 
 
-  <!-- Navigation -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <!--  <h2>Smart<span>Clinic</span></h2>-->
-        <img src="./img/logo.png  " width="180" height="40" alt="logo">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top">
+        <a class="navbar-brand offset-1" href="index.html">
+            <img src="./img/logo.png" width="180" height="40" alt="">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-        aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <br>
+  
         <ul class="navbar-nav ml-auto">
-          <li class="nav-camps">
-            <a id="camps" class="nav-link" href="#">CAMPANHAS</a>
+            <li class="nav-item0">
+                <a id="vision" class="nav-link" href="#"> O MEU PERFIL</a>
+              </li>
+          <li class="nav-item1">
+            <a id="vision" class="nav-link" href="#"> REDES SOCIAIS</a>
           </li>
-          <li class="nav-tv">
-            <a id="tv" class="nav-link" href="#">SMARTTV</a>
+          <li class="nav-item2">
+            <a id="network" class="nav-link" href="#">SMART TV </a>
+  
           </li>
-          <li class="nav-vision">
-            <a id="profile" class="nav-link" href="#"> PERFIL
-              <i class="fas fa-user"></i>
-            </a>
-          </li>
-          <!--
-             <li class="nav-login">
-              <a class="nav-link" href="#" >
-              <i class="fas fa-sign-in-alt fa-fw"></i> Login </a>             
-            </li>
-          -->
-
+          <li class="nav-item3" id="nav-login">
+            <a class="nav-link" href="index.html">
+                <i class="fas fa-sign-out-alt"></i> Logout </a>
         </ul>
-
       </div>
-
-    </div>
-    <a class="nav-link" id="nav-login" href="#">
-      <i class="fas fa-sign-out-alt"></i> Logout </a>
-  </nav>
+    </nav>
 
 
-  <div class="modal fade" id="edit">
-      <div class="modal-dialog modal-dialog-centered modal-md">
-       <!-- Modal content-->
-       <div class="modal-content">
-        <div class="modal-header">
-         <h4 class="modal-title">EDITAR</h4>
-         
-         <button type="button" class="close" data-dismiss="modal">&times;</button>
-       </div>
-     
-       <div class="modal-body ">
-          <form class="add_event" id="form_add_event">
-              <label for="name">Nome da Clínica</label>
-              <div class="input-group mb-2">
-                  <div class="input-group-prepend">
-                      <span class="input-group-text">
-                          <i class="fas fa-pencil-alt fa-fw"></i>
-                      </span>
-                  </div>
-                  <input id="name" type="text" name="name" placeholder="Event Name" class="form-control" value="Clínica Ferreira Borges" required
-                      autofocus>
-              </div>
-              <div class="row">
-                  <div class="col-12 col-sm-6">
-                      <div class="form-group mb-2 p-0 m-0">
-                          <label for="type">Contactos</label>
-                          <input id="contacts" type="text" name="contacts" placeholder="Event Name" class="form-control" value="121212122" required
-                              autofocus>
-
-
-                      </div>
-                  </div>
-                  <div class="col-12 col-sm-6">
-                      <div class="form-group mb-2 p-0 m-0">
-                          <label for="category">Email</label>
-                          <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
-                              autofocus>
-
-
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-12 col-sm-6">
-                      <label for="date">Website</label>
-                      <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                  <i class="fas fa-calendar-alt fa-fw"></i>
-                              </span>
-                          </div>
-                          <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
-                              autofocus>
-
-                      </div>
-                  </div>
-                  <div class="col-12 col-sm-6">
-                      <label for="date">Facebook</label>
-                      <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                  <i class="fas fa-calendar-alt fa-fw"></i>
-                              </span>
-                          </div>
-                          <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
-                              autofocus>
-
-                      </div>
-                  </div>
-              </div>
-
-              <div class="row">
-                  <div class="col-12 col-sm-6">
-                      <label for="select_country_event">Instagram</label>
-                      <div class="input-group mb-2 p-0 m-0">
-                          <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                  <i class="fas fa-map-marker-alt fa-fw"></i>
-                              </span>
-                          </div>
-                          <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
-                              autofocus>
-
-
-                      </div>
-
-                  </div>
-                  <div class="col-12 col-sm-6">
-                      <label for="select_city_event">Google+</label>
-                      <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                  <i class="fas fa-map-marker-alt fa-fw"></i>
-                              </span>
-                          </div>
-                          <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
-                              autofocus>
-                      </div>
-
-
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-12">
-                      <label for="place">Localização*</label>
-                      <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                  <i class="fas fa-map-marker-alt fa-fw"></i>
-                              </span>
-                          </div>
-                          <input class="form-control" id="place" type="text" name="place" placeholder="Enter place" value="Rua Ferreira Borges 1722-173 Lisboa"
-                              required>
-
-                      </div>
-                  </div>
-                  <div class="col-12">
-                      <label for="address_inp">Nome do Responsável</label>
-                      <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                  <i class="fas fa-map-marker-alt fa-fw"></i>
-                              </span>
-                          </div>
-                          <input class="form-control" id="address_inp" type="text" name="address" placeholder="Enter address" value="Dra ANA FERREIRA BORGES"
-                              required>
-                      </div>
-                  </div>
-              </div>
-
-              <hr>
-              <button type="submit" class="btn btn-success mb-1">Editar</button>
-              <button type="submit" class="btn  btn-secondary mb-1">Cancelar</button>
-
-          </form>
-         
-     </form>
-     </div>
-     </div>
-     </div>
-     
-    
-     </div>
-     </div>
-     
-
-
-
-
-  <div class="container" id="clinicInfo" style="margin-top:3em;">
-    <div class="container container-fluid" style="background-color: lightgrey; padding:22px;">
-      <h3><strong>Clínica Ferreira Borges</strong></h3>
+  <div class="container" id="clinicInfo" style="margin-top:2em;">
+    <div class="container container-clinicName">
+      <h3>
+        <strong>Clínica Ferreira Borges</strong>
+      </h3>
     </div>
     <br>
     <br>
@@ -276,47 +117,17 @@
             <div class="card">
               <div class="card-body ">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Username: <i class="fas fa-user fa-fw"></i>FerrBorges</li>
-                  <li class="list-group-item">Responsavel: <i class="fas fa-user-md"></i>Drª ANA</li>
-                 <!-- <li class="list-group-item"><a href="#" role="button" class="btn btn-secondary">
-                      <span class="pr-1">
-                        <i class="far fa-edit"></i>
-                      </span>
-                      Editar Informação
-                    </a>
-                  </li>-->
-                  
+                  <li class="list-group-item">Username:
+                    <i class="fas fa-user fa-fw"></i>FerrBorges</li>
+                  <li class="list-group-item">Responsavel:
+                    <i class="fas fa-user-md"></i>Drª ANA</li>
+
                 </ul>
-                
-    
-
               </div>
-              
             </div>
-
           </div>
-
-
         </div>
         <div class="col-lg-8 col-xs-12 col-md-6">
-         
-          <!--
-          <div class="row">
-              <div class="col-lg-3 col-yellow">
-  
-              </div>
-              <div class="col-lg-9 col-yellow">
-                <div class="container container-yellow">
-                    <a href="#" role="button" class="btn btn-secondary pull-right">
-                        <span class="pr-1">
-                          <i class="far fa-edit"></i>
-                        </span>
-                        Editar Informação
-                      </a>  
-                </div>
-  
-              </div>
-            </div>-->
           <div class="row">
             <div class="col-lg-3 col-yellow">
               <div class="container container-yellow text-right">
@@ -421,18 +232,12 @@
                   </a>
                 </li>
                 <li class="nav-btn">
-                    
-        
-
-                </li>
-                <li class="nav-btn">
-                    <a href="#" role="button"  data-toggle="modal" data-target="#edit" class="btn btn-secondary">
-                        <span class="pr-1">
-                          <i class="far fa-edit"></i>
-                        </span>
-                        Editar Informação
-                      </a>
-
+                  <a href="editProfile.html" role="button"  class="btn btn-secondary">
+                    <span class="pr-1">
+                      <i class="far fa-edit"></i>
+                    </span>
+                    Editar Informação
+                  </a>
                 </li>
               </ul>
               <br>
@@ -442,11 +247,7 @@
         </div>
 
       </div>
-      <!--
-        <div class="row">
-                
 
-        </div>-->
     </div>
 
 
@@ -454,174 +255,92 @@
 
   </div>
 
-    <div class="container" id="seguros_especialidades" style="margin-top:3em">
-        <!--<div class="jumbotron jumbotron-fluid">-->
-        <div class="row">
-            <div class="col-lg-3 col-xs-12 col-md-4">
-                <div class="container container-seguros">
-                    <div class="row row-title">
-                        <h3>
-                            <strong>Seguros</strong>
-                        </h3>
-
-                    </div>
-                    <br>
-                    
-                    <div class="row">
-                        <div class="container list-container">
-                            <ul class="list-seguros">
-                                <li>Medicare</li>
-                                <li>The Future Healthcare</li>
-                                <li> Saúde Prime</li>
-                                <li>Vitória Seguros </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-lg-9 col-xs-12 col-md-8 col-especialidades">
-                <div class="container container-seguros">
-                    <div class="row row-title2">
-                        <h3>
-                            <strong>Especialidades</strong>
-                        </h3>                       
-                    </div>
-                    <br>
-                    <div class="row">
-                                
-                            <ul class="list-especialidades">
-                                <li>Oclusão</li>
-                                <li>Endodontia</li>
-                                <li> Higiene Oral</li>
-                                <li>Implantologia </li>
-                                <li>Ortodontia</li>
-                                <li>Odontopediatria</li>
-                                <li> Periodontologia</li>
-                                <li>Prostodontia </li>
-                                <li>Prostodontia</li>
-                                <li> Cirurgia Oral</li>
-                                <li> Medicina e Patologia Oral</li>
-                                <li>Estética Dentária </li>
-                            </ul>
-                    </div>
-
-
-
-                </div>
-
-
-            </div>
-        </div>
-        <!-- </div>-->
-
-    </div>
-  <!--
-<div class="container-fluid" id="pricing">
-    <div class="text-center">
-      <h2>Pricing</h2>
-      <h4>Choose a payment plan that works for you</h4>
-      <br>
-    </div>
+  <div class="container" id="seguros_especialidades" style="margin-top:3em">
     <div class="row">
-      <div class="col-sm-4">
-        <div class="panel panel-default text-center">
-          <div class="panel-heading">
-            <h2>Pack 1</h2>
-          </div>
-          <div class="panel-body">
-            <br>
-            <p> Criação de Identidade Digital</p>
-            <p>  Copywriting</p>
-            <p> Gestão de Redes Sociais</p>
-            <p> Analytics</p>
-          </div>
-          <div class="panel-footer">
-            <h5>250€ +(50€ para ads) </h5>
-            <h4>6 meses</h4>                
-            <button class="btn btn-lg btn-secondary">Sign Up</button>
-          </div>
-        </div> 
-      </div> 
-      <div class="col-sm-4">
-        <div class="panel panel-default text-center">
-          <div class="panel-heading">
-            <h2>Pack 2</h2>
-          </div>
-          <div class="panel-body">
-            <br>
-            <p>Gestão de Blog do Site (2 artigos/semana)</p>
-            <p>Chatbox - Assistente Virtual de Resposta
-                Instantânea</p> 
-            <p>Criação de Vídeos para Campanhas (1 por mês)</p>
-          </div>
-          <div class="panel-footer">
-            <h5>475€ (75€ para ads)</h5>
-            <h4>por mês</h4>
-            <button class="btn btn-lg btn-secondary">Sign Up</button>
-          </div>
-        </div> 
-      </div> 
-     <div class="col-sm-4">
-        <div class="panel panel-default text-center">
-          <div class="panel-heading">
-            <h2>Pack 3</h2>
-          </div>
-          <div class="panel-body">
-              <br>
-              <p>Gestão de Blog do Site (2 artigos/semana)</p>
-              <p>Chatbox - Assistente Virtual de Resposta
-                  Instantânea</p> 
-              <p>Criação de Vídeos para Campanhas (1 por mês)</p>
-            </div>
-            <div class="panel-footer">
-              <h5>475€ (75€ para ads)</h5>
-              <h4>por mês</h4>
-              <button class="btn btn-lg btn-secondary">Sign Up</button>
-            </div>
-           
-        </div> 
-      </div> 
-    </div>
-  </div>
--->
-<br>
+      <div class="col-lg-3 col-xs-12 col-md-4">
+        <div class="container container-seguros">
+          <div class="row row-title">
+            <h3>
+              <strong>Seguros</strong>
+            </h3>
 
-<hr class="my-4">
-
-
-<br>
-  <div class="container" id="packs">
-      <div class="row row-header">
-          <h1 class="title1">Os nossos</h1>
-          <h1 class="title2"> Pacotes </h1>
-    
-        </div>
-<div class="row">
-  <div class="container text-center">
-      <h3>
-          <strong>Pacotes</strong>
-      </h3>
-      <br>
-      <p>making it look like readable English. Many desktop publishing packages and web page editors 
-        now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover 
-        many web sites still in their infancy. Various versions have evolved over the years, sometimes by 
-        accident, sometimes on purpose (injected humour and the like).
-          
-          </p>
+          </div>
           <br>
 
-    
+          <div class="row">
+            <div class="container list-container">
+              <ul class="list-seguros">
+                <li>Medicare</li>
+                <li>The Future Healthcare</li>
+                <li> Saúde Prime</li>
+                <li>Vitória Seguros </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-9 col-xs-12 col-md-8 col-especialidades">
+        <div class="container container-seguros">
+          <div class="row row-title2">
+            <h3>
+              <strong>Especialidades</strong>
+            </h3>
+          </div>
+          <br>
+          <div class="row">
+
+            <ul class="list-especialidades">
+              <li>Oclusão</li>
+              <li>Endodontia</li>
+              <li> Higiene Oral</li>
+              <li>Implantologia </li>
+              <li>Ortodontia</li>
+              <li>Odontopediatria</li>
+              <li> Periodontologia</li>
+              <li>Prostodontia </li>
+              <li>Prostodontia</li>
+              <li> Cirurgia Oral</li>
+              <li> Medicina e Patologia Oral</li>
+              <li>Estética Dentária </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-</div>
+  <br>
+
+  <hr class="my-4">
+
+  <br>
+  <div class="container" id="packs">
+    <div class="row row-header">
+      <h1 class="title1">Os nossos</h1>
+      <h1 class="title2"> Pacotes </h1>
+
+    </div>
+    <div class="row">
+      <div class="container text-center">
+        <br>
+        <br>
+        <p>making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
+          their default model text, and a search for 'lorem ipsum' will uncover
+        </p>
+        <br>
+        <br>
+
+      </div>
+
+    </div>
     <div class="card-deck mb-3 text-center">
-      <div class="card mb-4 shadow-sm">
-        <div class="card-header">
+      <div class="card mb-4 shadow-sm" style="border:1px solid #ffd43f">
+        <div class="card-header" style="border-bottom:1px solid #ffd43f">
           <h4 class="my-0 font-weight-normal">Pack1</h4>
         </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">$12
+          <h1 class="card-title pricing-card-title">250€
             <small class="text-muted">/ mês</small>
           </h1>
           <ul class="list-unstyled mt-3 mb-4">
@@ -632,7 +351,7 @@
           </ul>
           <br>
           <br>
-          <button type="button" class="btn btn-lg btn-block btn-outline-secondary">Escolhido</button>
+          <button type="button" class="btn btn-lg btn-block btn-outline-secondary">Plano Atual</button>
         </div>
       </div>
       <div class="card mb-4 shadow-sm">
@@ -640,16 +359,16 @@
           <h4 class="my-0 font-weight-normal">Pack2</h4>
         </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">$15
-            <small class="text-muted">/ mo</small>
+          <h1 class="card-title pricing-card-title">475€
+            <small class="text-muted">/ mês</small>
           </h1>
           <ul class="list-unstyled mt-3 mb-4">
             <li>Gestão de Blog do Site (2 artigos/sem)</li>
             <li>Chatbox - Assistente Virtual </li>
             <li>Criação de Vídeos para Campanhas (1 por mês)</li>
-            </ul>
-            <br>
-            <br>
+          </ul>
+          <br>
+          <br>
           <button type="button" class="btn btn-lg btn-block btn-secondary">Quero Pack2</button>
         </div>
       </div>
@@ -658,17 +377,17 @@
           <h4 class="my-0 font-weight-normal">Pack3</h4>
         </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">$29
-            <small class="text-muted">/ mo</small>
+          <h1 class="card-title pricing-card-title">600€
+            <small class="text-muted">/ mês</small>
           </h1>
           <ul class="list-unstyled mt-3 mb-4">
-            <li>Campanhas – Facebook &
-                Instagram</li>
+            <li>Campanhas – Facebook & Instagram
+            </li>
             <li>SEO / SEM</li>
             <li>Google Ads</li>
             <li>E-mail / SMS Marketing</li>
-            <li>Publicação de conteúdos & Social Media
-                Engagement</li>
+            <li>Publicação de conteúdos & Social Media Engagement
+            </li>
           </ul>
           <button type="button" class="btn btn-lg btn-block btn-secondary">Quero Pack3</button>
         </div>
@@ -676,66 +395,6 @@
     </div>
   </div>
 
-<!--
-  <div class="container" style="margin-top:2em;">
-    <h1>Perfil</h1>
-    <div class="row">
-      <section class="col-md-6 px-0 px-sm-3 mt-5">
-        <div class="card mb-5">
-          <img class="card-img-top" height="160" src="./img/logo-clinica.png" alt="clinic-logo">
-          <div class="card-body text-center pb-3">
-            <h2 id="username" class="card-text my-3">Clinica Ferreira borges</h2>
-            <div class="py-3">
-              <a href="#" role="button" class="btn btn-secondary w-80">
-                <span class="pr-1">
-                  <i class="far fa-edit"></i>
-                </span>
-                Editar Informação
-              </a>
-            </div>
-            <div class="pb-2">
-              <a href="#" role="button" class="btn btn-secondary w-80">
-                <span class="pr-1">
-                  <i class="fas fa-cog"></i>
-                </span>
-                Definições
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </section>
-      <aside class="col-md-6 mb-5">
-        <div class="pt-5">
-          <div class="card">
-            <div class="card-body ">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">username</li>
-                <li class="list-group-item">NIF</li>
-                <li class="list-group-item">email</li>
-                <li class="list-group-item">rua, Localização</li>
-                <li class="list-group-item">
-                  <a class="link  " href="https://instagram.com" target="_blank">
-                    <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
-                  </a>
-                  <a class="link" href="https://facebook.pt" target="_blank">
-                    <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                  </a>
-                  <a class="nav" href="https://google.pt" target="_blank">
-                    <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                  </a>
-                </li>
-                <li class="list-group-item">website?</li>
-                <li class="list-group-item">LATITUDE LONGITUDE</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </aside>
-
-    </div>
-  </div>
-  </div>-->
 
 
   <!--  Footer -->
@@ -752,7 +411,7 @@
               <a class="nav-link" href="#">O meu Perfil</a>
             </li>
             <li class="nav-footer">
-              <a class="nav-link" href="#">As minhas Campanhas</a>
+              <a class="nav-link" href="#">Redes Sociais</a>
             </li>
             <li class="nav-footer">
               <a class="nav-link" href="#">SmartTV</a>
