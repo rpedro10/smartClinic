@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Profile</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/logo-nav.css" rel="stylesheet">
+
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <!--  <h2>Smart<span>Clinic</span></h2>-->
+                <img src="./img/logo.png  " width="180" height="40" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-camps">
+                        <a id="profile" class="nav-link" href="#"> O SEU PERFIL
+                        </a>
+                    </li>
+                    <li class="nav-tv">
+                        <a id="camps" class="nav-link" href="#">REDES SOCIAIS</a>
+
+                    </li>
+                    <li class="nav-vision">
+                        <a id="tv" class="nav-link" href="#">SMARTTV</a>
+
+                    </li>
+                    <!--
+             <li class="nav-login">
+              <a class="nav-link" href="#" >
+              <i class="fas fa-sign-in-alt fa-fw"></i> Login </a>             
+            </li>
+          -->
+
+                </ul>
+
+            </div>
+
+        </div>
+        <a class="nav-link" id="nav-login" href="index.html">
+            <i class="fas fa-sign-out-alt"></i> Logout </a>
+    </nav>
+    <br>
+    <br>
+    <!--
+    <div class="container container-fluid">
+            <form class="add_event" id="form_add_event">
+                    <label for="name">Name*</label>
+                    <div class="input-group mb-2">
+                     <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fas fa-pencil-alt fa-fw"></i>
+                      </span>
+                    </div>
+                    <input id="name" type="text" name="name" placeholder="Event Name" class="form-control" value="{{ old('name') }}" required autofocus>
+                    
+                   
+                   
+                 </div>
+                 
+                 <div class="row">
+                   <div class="col-12 col-sm-6">
+                    <div class="form-group mb-2 p-0 m-0" id="select_type">
+                     <label for="type">Type*</label>
+                     <select class="custom-select" id="type" name="select_type">
+                      <option value="Public" selected>Public</option>
+                      <option value="Private">Private</option>
+                    </select>
+                 
+                 </div>
+               </div>
+               <div class="col-12 col-sm-6">
+                <div class="form-group mb-2 p-0 m-0" id="select_category">
+                 <label for="category">Category*</label>
+                 <select class="custom-select" id="category" name="select_category">
+                  @foreach($categories as $cat)
+                  <option value="{{ $cat->name }}">{{ $cat->name }}</option>
+                  @endforeach
+                </select>
+               </div>
+               </div>
+               </div>
+               <div class="row">
+                 <div class="col-12 col-sm-6">
+                   <label for="date">Date*</label>
+                   <div class="input-group mb-2">
+                     <div class="input-group-prepend">
+                       <span class="input-group-text">
+                         <i class="fas fa-calendar-alt fa-fw"></i>
+                       </span>
+                     </div>
+                     <input class="form-control" id="date" type="date" name="date" required>
+                 
+                   </div>
+                 </div>
+                 <div class="col-12 col-sm-6">
+                   <label for="date">Time*</label>
+                   <div class="input-group mb-2">
+                     <div class="input-group-prepend">
+                       <span class="input-group-text">
+                         <i class="fas fa-calendar-alt fa-fw"></i>
+                       </span>
+                     </div>
+                     <input class="form-control" id="time" type="time" name="time" required>
+                 
+                   </div>
+                 </div>
+               </div>
+               
+               <div class="row">
+                 <div class="col-12 col-sm-6">
+                  <label for="select_country_event">Country*</label>
+                  <div class="input-group mb-2 p-0 m-0">
+                   <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fas fa-map-marker-alt fa-fw"></i>
+                    </span>
+                  </div>
+                  <select class = 'custom-select' id = 'select_country_event' name = 'country'></select>
+               
+                 
+               </div>
+               
+               </div>
+               <div class="col-12 col-sm-6">
+                <label for="select_city_event">City*</label>
+                <div class="input-group mb-2">
+                 <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                  </span>
+                </div>
+                <select class = 'custom-select' id = 'select_city_event' name = 'city'></select>
+               </div>
+               
+               
+               </div>
+               </div>
+               <div class="row">
+                 <div class="col-12">
+                  <label for="place">Place*</label>
+                  <div class="input-group mb-2">
+                   <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fas fa-map-marker-alt fa-fw"></i>
+                    </span>
+                  </div>
+                  <input class="form-control" id="place" type="text" name="place" placeholder="Enter place" value="{{ old('place') }}" required>
+               
+               </div>
+               </div>
+               <div class="col-12">
+                <label for="address_inp">Address*</label>
+                <div class="input-group mb-2">
+                 <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                  </span>
+                </div>
+                <input class="form-control" id="address_inp" type="text" name="address" placeholder="Enter address" value="{{ old('address') }}" required>
+               </div>
+               </div>
+               </div>
+               <label for="description">Description</label>
+               <div class="input-group mb-2">
+                 <textarea id="description" class="form-control" rows="4" cols="1" name="description" placeholder="Enter Description"  required>{{ old('description') }}</textarea>
+               </div>
+               <hr>
+               <button type="submit" class="btn btn-block btn-success mb-1" >Add Event</button>
+               </form>
+    </div>
+-->
+
+
+
+    <div class="container">
+        <h1>Editar</h1>
+        <hr>
+        <div class="row" style="background-color: lightgrey;
+       ;padding:11px">
+            <!-- left column -->
+            <div class="col-md-4">
+                <div class="text-center">
+                    <img class="img-fluid" src="./img/logo-clinica.png" alt="clinic-logo">
+                    <br>
+                    <br>
+
+                    <h6>Alterar logo da clínica</h6>
+                    <input type="file" class="form-control">
+                </div>
+                <br>
+                <br>
+                <div class="text-center">
+                    <img class="img-fluid" src="./img/cl2.jpg" alt="">
+                    <br>
+                    <br>
+
+                    <h6>Acrescentar Fotos à galeria de Imagens da clínica</h6>
+                    <input type="file" class="form-control">
+                </div>
+            </div>
+
+            <div class="col-md-8 personal-info">
+                <!-- <div class="alert alert-info alert-dismissable">
+                    <a class="panel-close close" data-dismiss="alert">×</a>
+                    <i class="fa fa-coffee"></i>
+                    This is an
+                    <strong>.alert</strong>. Use this to show important messages to the user.
+                </div>-->
+                <h3>Informação da Clínica</h3>
+                <form class="add_event" id="form_add_event">
+                    <label for="name">Nome da Clínica</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fas fa-pencil-alt fa-fw"></i>
+                            </span>
+                        </div>
+                        <input id="name" type="text" name="name" placeholder="Event Name" class="form-control" value="Clínica Ferreira Borges" required
+                            autofocus>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group mb-2 p-0 m-0">
+                                <label for="type">Contactos</label>
+                                <input id="contacts" type="text" name="contacts" placeholder="Event Name" class="form-control" value="121212122" required
+                                    autofocus>
+
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group mb-2 p-0 m-0">
+                                <label for="category">Email</label>
+                                <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
+                                    autofocus>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <label for="date">Website</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-calendar-alt fa-fw"></i>
+                                    </span>
+                                </div>
+                                <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
+                                    autofocus>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <label for="date">Facebook</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-calendar-alt fa-fw"></i>
+                                    </span>
+                                </div>
+                                <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
+                                    autofocus>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <label for="select_country_event">Instagram</label>
+                            <div class="input-group mb-2 p-0 m-0">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-map-marker-alt fa-fw"></i>
+                                    </span>
+                                </div>
+                                <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
+                                    autofocus>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <label for="select_city_event">Google+</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-map-marker-alt fa-fw"></i>
+                                    </span>
+                                </div>
+                                <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
+                                    autofocus>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="place">Localização*</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-map-marker-alt fa-fw"></i>
+                                    </span>
+                                </div>
+                                <input class="form-control" id="place" type="text" name="place" placeholder="Enter place" value="Rua Ferreira Borges 1722-173 Lisboa"
+                                    required>
+
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="address_inp">Nome do Responsável</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-map-marker-alt fa-fw"></i>
+                                    </span>
+                                </div>
+                                <input class="form-control" id="address_inp" type="text" name="address" placeholder="Enter address" value="Dra ANA FERREIRA BORGES">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="container">
+                                <h5>Seguros</h5>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Medicare</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Seguro1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" checked>
+                                <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="container">
+                                <h5>Especialidades</h5>
+                            </div>
+                            <div class="container">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked>
+                                    <label class="form-check-label" for="inlineCheckbox1">Medicare</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Seguro1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <button type="submit" class="btn btn-success mb-1">Editar Informação</button>
+                    <button type="reset" class="btn  btn-secondary mb-1">Cancelar</button>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <!--
+    <div class="container" style="background-color: lightgrey;padding:22px;">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="container">
+                    <h5>Seguros</h5>
+                </div>
+                <form>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Medicare</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Seguro1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" checked>
+                        <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-lg-6" style="background-color: lightgrey">
+                <div class="container">
+                    <h4>Especialidades</h4>
+                </div>
+                <div class="container">
+                    <form>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked>
+                            <label class="form-check-label" for="inlineCheckbox1">Medicare</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Seguro1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <br>
+    <br>
+    <div class="container" style="background-color: lightgrey;padding:22px;">
+        <div class="header">
+            <h3>Credenciais de Login </h3>
+        </div>
+        <div class="form-horizontal">
+            <div class="control-group">
+                <label for="username" class="control-label">Username</label>
+                <div class="controls">
+                    <input type="text" name="username" value="FerrBorges">
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="new_password" class="control-label">Password</label>
+                <div class="controls">
+                    <input type="password" name="new_password" value="old">
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="confirm_password" class="control-label">Confirmar Password</label>
+                <div class="controls">
+                    <input type="password" name="confirm_password">
+                </div>
+            </div>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success mb-1">Editar Credenciais</button>
+        <button type="reset" class="btn  btn-secondary mb-1">Cancelar</button>
+
+    </div>
+
+
+
+
+    <footer class="page-footer" style="margin-top:2em;">
+        <div class="container">
+            <div class="row" id="footer-row1">
+                <div class="col-lg-7">
+                    <ul class="nav">
+                        <li class="nav-footer">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-footer">
+                            <a class="nav-link" href="#">O meu Perfil</a>
+                        </li>
+                        <li class="nav-footer">
+                            <a class="nav-link" href="#">Redes Sociais</a>
+                        </li>
+                        <li class="nav-footer">
+                            <a class="nav-link" href="#">SmartTV</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <ul class="nav ">
+                        <li class="nav-social-media">
+                            <a class="nav-link  " href="https://instagram.com" target="_blank">
+                                <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                        </li>
+                        <li class="nav-social-media">
+                            <a class="nav-link" href="https://facebook.pt" target="_blank">
+                                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                        </li>
+                        <li class="nav-social-media">
+                            <a class="nav-link" href="https://google.pt" target="_blank">
+                                <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row" id="footer-row2">
+                <div class="col-lg-12">
+                    <ul class="nav">
+                        <li class="nav-footer">
+                            <a class="nav-link" href="#">Termos e Condições</a>
+                        </li>
+                        <li class="nav-footer">
+                            <a class="nav-link" href="#">Politica de Privacidade e cookies</a>
+                        </li>
+                        <li class="nav-footer">
+                            <p>| © 2018 Todos os direitos reservados
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

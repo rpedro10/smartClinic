@@ -60,9 +60,8 @@ h2{
 #nav-login{
   background-color:rgb(59, 59, 59);
   color:white;
-  font-size: small; 
-  padding:21px;
-   
+  font-size: small;
+padding:16px;   
   
 }
 
@@ -618,9 +617,9 @@ width:66%;
 
   .list-especialidades {
     list-style-type: disc;
-    -webkit-columns: 3;
-    -moz-columns: 3;
-    columns: 3;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
     list-style-position: inside;
 }
 

@@ -81,6 +81,151 @@
   </nav>
 
 
+  <div class="modal fade" id="edit">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+       <!-- Modal content-->
+       <div class="modal-content">
+        <div class="modal-header">
+         <h4 class="modal-title">EDITAR</h4>
+         
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+       </div>
+     
+       <div class="modal-body ">
+          <form class="add_event" id="form_add_event">
+              <label for="name">Nome da Clínica</label>
+              <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text">
+                          <i class="fas fa-pencil-alt fa-fw"></i>
+                      </span>
+                  </div>
+                  <input id="name" type="text" name="name" placeholder="Event Name" class="form-control" value="Clínica Ferreira Borges" required
+                      autofocus>
+              </div>
+              <div class="row">
+                  <div class="col-12 col-sm-6">
+                      <div class="form-group mb-2 p-0 m-0">
+                          <label for="type">Contactos</label>
+                          <input id="contacts" type="text" name="contacts" placeholder="Event Name" class="form-control" value="121212122" required
+                              autofocus>
+
+
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                      <div class="form-group mb-2 p-0 m-0">
+                          <label for="category">Email</label>
+                          <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
+                              autofocus>
+
+
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-12 col-sm-6">
+                      <label for="date">Website</label>
+                      <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                  <i class="fas fa-calendar-alt fa-fw"></i>
+                              </span>
+                          </div>
+                          <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
+                              autofocus>
+
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                      <label for="date">Facebook</label>
+                      <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                  <i class="fas fa-calendar-alt fa-fw"></i>
+                              </span>
+                          </div>
+                          <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
+                              autofocus>
+
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-12 col-sm-6">
+                      <label for="select_country_event">Instagram</label>
+                      <div class="input-group mb-2 p-0 m-0">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                  <i class="fas fa-map-marker-alt fa-fw"></i>
+                              </span>
+                          </div>
+                          <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
+                              autofocus>
+
+
+                      </div>
+
+                  </div>
+                  <div class="col-12 col-sm-6">
+                      <label for="select_city_event">Google+</label>
+                      <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                  <i class="fas fa-map-marker-alt fa-fw"></i>
+                              </span>
+                          </div>
+                          <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
+                              autofocus>
+                      </div>
+
+
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-12">
+                      <label for="place">Localização*</label>
+                      <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                  <i class="fas fa-map-marker-alt fa-fw"></i>
+                              </span>
+                          </div>
+                          <input class="form-control" id="place" type="text" name="place" placeholder="Enter place" value="Rua Ferreira Borges 1722-173 Lisboa"
+                              required>
+
+                      </div>
+                  </div>
+                  <div class="col-12">
+                      <label for="address_inp">Nome do Responsável</label>
+                      <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                  <i class="fas fa-map-marker-alt fa-fw"></i>
+                              </span>
+                          </div>
+                          <input class="form-control" id="address_inp" type="text" name="address" placeholder="Enter address" value="Dra ANA FERREIRA BORGES"
+                              required>
+                      </div>
+                  </div>
+              </div>
+
+              <hr>
+              <button type="submit" class="btn btn-success mb-1">Editar</button>
+              <button type="submit" class="btn  btn-secondary mb-1">Cancelar</button>
+
+          </form>
+         
+     </form>
+     </div>
+     </div>
+     </div>
+     
+    
+     </div>
+     </div>
+     
 
 
 
@@ -281,7 +426,7 @@
 
                 </li>
                 <li class="nav-btn">
-                    <a href="#" role="button" class="btn btn-secondary">
+                    <a href="#" role="button"  data-toggle="modal" data-target="#edit" class="btn btn-secondary">
                         <span class="pr-1">
                           <i class="far fa-edit"></i>
                         </span>
