@@ -40,7 +40,7 @@ $(document).ready(function(){ //scroll in the homepage
   $('body').scrollspy({target: "#banner1", offset: 0});   
 
   // Add smooth scrolling on all links inside the navbar
-  $("#btn_more ").on('click', function(event) {
+  $(".btn_more ").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -270,22 +270,7 @@ function myMap() {
         '</div>'+
         
     '</div>';
-  
-    /**
-    <div class="row" id="btns_row">
-            <div class="col-sm">
-              <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#make_call" id="call" role="button">Linha Smart
-                
-              </a>
-            </div>
-            <div class="col-sm">
-              <a class="btn btn-secondary btn-lg" href="#" data-toggle="modal" data-target="#add_appointment" id="appointment" role="button">Marcação Online
-                <!--<i class="fas fa-calendar-alt"></i>-->
-              </a>
-            </div>
-          </div>
-    
-     */
+ 
     var infowindow = new google.maps.InfoWindow({
       content: contentString
     });

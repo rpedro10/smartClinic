@@ -272,6 +272,19 @@ padding-right:12px;
 
   
 }
+
+.inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: red;
+}
 /**
 #testimonies_container .container {
   padding:22px;
@@ -708,4 +721,10 @@ border-radius: 0px;
  #seguros_especialidades .col-especialidades{  
   padding-left:44px;
  }
+  /*****CAMPANHAS/POSTS page**/
+
+  .social-image{
+
+  }
   
+ 
