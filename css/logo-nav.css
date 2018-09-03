@@ -98,29 +98,52 @@ h2{
 }
 /* end navbar*/
 
+
+/**
 .carousel-caption {
-  text-align: left;
   right: auto;
   padding:5px;
-}
+  color:white;
+  
+}*/
 
 
 #caption1{
   max-width: 450px;
-  top: 30%;
-  color:white;
 }
 #caption2{
   max-width: 400px;
-  top: 30%;
   
 }
 #caption3{
   max-width: 550px;
-  top: 30%;
-  color:white;
  
 }
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  bottom: 3rem;
+  text-align: left;
+  top: 30%;
+  
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 30rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+}
+
 
 
 #column1 {
