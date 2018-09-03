@@ -51,9 +51,9 @@
             <br>
 
             <ul class="navbar-nav ml-auto">
-                    <li class="nav-item1">
-                            <a id="vision" class="nav-link" href="userProfile.html">O MEU PERFIL</a>
-                        </li>
+                <li class="nav-item1">
+                    <a id="vision" class="nav-link" href="userProfile.html">O MEU PERFIL</a>
+                </li>
                 <li class="nav-item1">
                     <a id="vision" class="nav-link" href="redes.html"> REDES SOCIAIS</a>
                 </li>
@@ -205,7 +205,7 @@
         <hr>
         <div class="row" style="background-color: #e9ecef;padding:11px">
             <!-- left column -->
-            <div class="col-md-3"  style="padding-right:23px">
+            <div class="col-md-3" style="padding-right:23px">
                 <div class="text-center">
                     <img class="img-fluid" src="./img/logo-clinica.png" alt="clinic-logo">
                     <br>
@@ -220,9 +220,9 @@
                     <img class="img-fluid" src="./img/cl2.jpg" alt="">
                     <br>
                     <br>
-                    
+
                     <h6>Adicionar imagens à galeria de Imagens da clínica</h6>
-                    <input type="file" class="form-control" >
+                    <input type="file" class="form-control">
                 </div>
             </div>
 
@@ -247,19 +247,40 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-sm-6">
+                            <label for="type">Contactos</label>
+
                             <div class="form-group mb-2 p-0 m-0">
-                                <label for="type">Contactos</label>
-                                <input id="contacts" type="text" name="contacts" placeholder="Event Name" class="form-control" value="121212122" required
-                                    autofocus>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-phone"></i>
+
+
+                                        </span>
+                                    </div>
+                                    <input id="contacts" type="text" name="contacts" placeholder="Event Name" class="form-control" value="121212122" required
+                                        autofocus>
+
+                                </div>
+
 
 
                             </div>
                         </div>
                         <div class="col-12 col-sm-6">
+                            <label for="email">Email</label>
                             <div class="form-group mb-2 p-0 m-0">
-                                <label for="category">Email</label>
-                                <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
-                                    autofocus>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="far fa-envelope"></i>
+                                        </span>
+                                    </div>
+                                    <input id="email" type="text" name="contacts" placeholder="email" class="form-control" value="1212@example.com" required
+                                        autofocus>
+
+                                </div>
+
 
 
                             </div>
@@ -271,7 +292,8 @@
                             <div class="input-group mb-2">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
-                                        <i class="fas fa-calendar-alt fa-fw"></i>
+                                        <i class="fab fa-chrome"></i>
+
                                     </span>
                                 </div>
                                 <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
@@ -284,7 +306,8 @@
                             <div class="input-group mb-2">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
-                                        <i class="fas fa-calendar-alt fa-fw"></i>
+                                        <i class="fab fa-facebook-f"></i>
+
                                     </span>
                                 </div>
                                 <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
@@ -300,7 +323,8 @@
                             <div class="input-group mb-2 p-0 m-0">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
-                                        <i class="fas fa-map-marker-alt fa-fw"></i>
+                                        <i class="fab fa-instagram"></i>
+
                                     </span>
                                 </div>
                                 <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
@@ -315,7 +339,8 @@
                             <div class="input-group mb-2">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
-                                        <i class="fas fa-map-marker-alt fa-fw"></i>
+                                        <i class="fab fa-google-plus-g"></i>
+
                                     </span>
                                 </div>
                                 <input id="email" type="text" name="email" placeholder="Event Name" class="form-control" value="example@gmail.com" required
@@ -344,7 +369,8 @@
                             <div class="input-group mb-2">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
-                                        <i class="fas fa-map-marker-alt fa-fw"></i>
+                                        <i class="fas fa-user-md"></i>
+
                                     </span>
                                 </div>
                                 <input class="form-control" id="address_inp" type="text" name="address" placeholder="Enter address" value="Dra ANA FERREIRA BORGES">
@@ -352,59 +378,16 @@
                         </div>
                     </div>
                     <div class="row">
-                       
+
                         <div class="col-lg-6">
-                                <br>
+                            <br>
                             <div class="container">
                                 <h5>Seguros</h5>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                <label class="form-check-label" for="inlineCheckbox1">Medicare</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <label class="form-check-label" for="inlineCheckbox2">Seguro1</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" checked>
-                                <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-6" style="border-left:1px solid lightgrey">
-                                <br>
-                            <div class="container">
-                                <h5>Especialidades</h5>
-                            </div>
                             <div class="container">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked>
-                                    <label class="form-check-label" for="inlineCheckbox1">Medicare</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Seguro1</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
@@ -418,25 +401,59 @@
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
                                     <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
                                 </div>
-                                <div class="form-check form-check-inline">
+                                <div class="form-check form-check">
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
                                     <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
                                 </div>
-                                <div class="form-check form-check-inline">
+                                <div class="form-check form-check">
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
                                     <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
                                 </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-6" style="border-left:1px solid lightgrey">
+                            <br>
+                            <div class="container">
+                                <h5>Especialidades</h5>
+                            </div>
+                            <div class="container">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                    <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked>
+                                    <label class="form-check-label" for="inlineCheckbox1">ESP1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Esp2</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                    <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                                    <label class="form-check-label" for="inlineCheckbox3">ESP3</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                    <label class="form-check-label" for="inlineCheckbox3">Seguro1</label>
+                                    <label class="form-check-label" for="inlineCheckbox3">ESP4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">ESP4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">ESP4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">ESP4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">ESP4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">ESP4</label>
                                 </div>
                             </div>
                         </div>

@@ -369,3 +369,41 @@ function getClosestClinic(position){
   }
 
 }
+
+
+$(document).ready(function(){
+  var video = document.getElementById('myVideo');
+  if(video!=null){
+    video.defaultMuted = true;
+    
+    document.getElementById('myVideo').addEventListener('ended',myHandler,false);
+    function myHandler(e) {
+    console.log("ended");
+    
+    var video = document.getElementById('myVideo');
+    video.src="./img/video.mp4"
+    }
+
+  }
+  
+
+ 
+});
+
+
+/**
+
+$(document).ready(function(){
+  var video = document.getElementById('myVideo');
+  if(video!=null){
+    
+    video.autoplay = true;
+    video.load();
+    
+
+  }
+  
+
+ 
+}); */
+

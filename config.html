@@ -75,53 +75,21 @@
         <div class="jumbotron">
             <div class="container">
                 <h2 class="display-4">Gestão da Smart TV</h2>
-                <div class="row">
-                    <div class="col-lg-8">
-                        <br>
-                        <p>This is a template for a simple marketing or informational website. It includes a large callout called
-                            a jumbotron and three supporting pieces of content. Use it as a starting point to create something
-                            more unique.
-                        </p>
-                        <br>
-                        <p>
-                            <a class="btn btn-secondary btn-md" href="smartClinicTV.html" role="button" target="_blank">
-                                Ver Smart TV
-                                <i class="fas fa-tv"></i>
-                            </a>
-                    </div>
-                    <div class="col-lg-4">
-                        <form>
-                            <label for="theme">Tema:</label>
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="fas fa-edit"></i>
 
-                                    </span>
-                                </div>
-                                <input id="theme" type="text" name="theme" class="form-control" placeholder="Qual é o tema do video?" required autofocus>
-                            </div>
-                            <label for="date">Data de publicação:</label>
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="fas fa-calendar-alt fa-fw"></i>
-                                    </span>
-                                </div>
-                                <input type="date" id="date" class="form-control">
-                            </div>
-                            <label for="description">Descrição:</label>
-                            <div class="input-group mb-2">
-                                <textarea id="description" class="form-control" rows="4" cols="1" name="description" placeholder="Insira uma Descrição mais detalhada do post"
-                                    required></textarea>
-                            </div>
+                <br>
+                <p>This is a template for a simple marketing or informational website. It includes a large callout called a
+                    jumbotron and three supporting pieces of content. Use it as a starting point to create something more
+                    unique.
+                </p>
+                <br>
+                <p>
+                    <a class="btn btn-secondary btn-md" href="smartClinicTV.html" role="button" target="_blank">
+                        Ver Smart TV
+                        <i class="fas fa-tv"></i>
+                    </a>
 
-                            <hr>
-                            <button type="submit" class="btn btn-block btn-success mb-2">Fazer Pedido</button>
-                        </form>
-                    </div>
+                    <a class="btn btn-secondary btn-md" href="#" data-toggle="modal" data-target="#request_video" role="button">Sugerir Video</a>
 
-                </div>
 
 
 
@@ -156,7 +124,9 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item social-image" src="./img/video.mp4" allowfullscreen></iframe>
+                        <video controls muted >
+                            <source src="./img/video.mp4" type="video/mp4"> Your browser does not support the video tag.
+                        </video>
                     </div>
                     <div class="container text-center">
                         <br>
@@ -166,7 +136,9 @@
                 </div>
                 <div class="col-md-4">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item social-image" src="./img/video.mp4" allowfullscreen></iframe>
+                        <video controls muted >
+                            <source src="./img/video2.mp4" type="video/mp4"> Your browser does not support the video tag.
+                        </video>
                     </div>
                     <div class="container text-center">
                         <br>
@@ -177,7 +149,9 @@
                 </div>
                 <div class="col-md-4">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item social-image" src="./img/video.mp4" allowfullscreen></iframe>
+                        <video controls muted >
+                            <source src="./img/video.mp4" type="video/mp4"> Your browser does not support the video tag.
+                        </video>
                     </div>
                     <div class="container text-center">
                         <br>
@@ -221,6 +195,49 @@
     </main>
 
     <hr>
+
+    <div class="modal fade" id="request_video">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Fazer Pedido de Video</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body ">
+                    <form>
+                        <label for="theme">Tema:</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-edit"></i>
+
+                                </span>
+                            </div>
+                            <input id="theme" type="text" name="theme" class="form-control" placeholder="Qual é o tema do Post?" required autofocus>
+                        </div>
+                        <label for="date">Data de publicação:</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-calendar-alt fa-fw"></i>
+                                </span>
+                            </div>
+                            <input type="date" id="date" class="form-control">
+                        </div>
+                        <label for="description">Descrição:</label>
+                        <div class="input-group mb-2">
+                            <textarea id="description" class="form-control" rows="4" cols="1" name="description" placeholder="Insira uma Descrição mais detalhada do video"
+                                required></textarea>
+                        </div>
+                        <hr>
+                        <button type="submit" class="btn btn-block btn-success mb-2">Fazer Pedido</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--  Footer -->
 
