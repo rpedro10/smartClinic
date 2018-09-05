@@ -457,7 +457,6 @@ function drawTime(ctx, radius){
     // second
     second=(second*Math.PI/30);
     drawHand(ctx, second, radius*0.9, radius*0.02);
-    console.log(hour+minute+second);
 }
 
 function drawHand(ctx, pos, length, width) {
@@ -481,12 +480,20 @@ function startTime() {
   document.getElementById('txt').innerHTML =
   h + ":" + m + ":" + s;
   var t = setTimeout(startTime, 500);
+  
 }
 function checkTime(i) {
   if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
   return i;
 }
 
+$(document).ready(function () {
+  $.getJSON('https://api.darksky.net/forecast/98912fd1b68be81fb1712612c0f803e0/41.08,8.36', function(forecast) {
+    
+                  console.log(forecast);
+                  
+                });            
+});
 
 /**
 
