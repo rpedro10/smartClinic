@@ -120,11 +120,11 @@ h2{
  
 }
 /* Carousel base class */
-.carousel {
+#carouselExampleIndicators .carousel {
   margin-bottom: 4rem;
 }
 /* Since positioning the image, we need to help out the caption */
-.carousel-caption {
+#carouselExampleIndicators .carousel-caption {
   z-index: 10;
   bottom: 3rem;
   text-align: left;
@@ -133,11 +133,11 @@ h2{
 }
 
 /* Declare heights because of positioning of img element */
-.carousel-item {
+#carouselExampleIndicators .carousel-item {
   height: 30rem;
   background-color: #777;
 }
-.carousel-item > img {
+#carouselExampleIndicators .carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
@@ -146,15 +146,7 @@ h2{
 
 
 
-#column1 {
-padding-right: 0px;
-}
 
-#column2 {
-  padding-left: 0px;
-  padding-bottom: 0px;
-}
- 
 
 #btn_find{
   background-color: lightgray;
@@ -197,18 +189,18 @@ color:black;
  
 
 /***buttons ***/
-.vision-icon{
-  /*
+/*.vision-icon{
+  
   border: 1px solid #ffd43f;
   padding-right: 0px;
   padding-left: 0px;
   padding-top: 22px;
-  */
+  
 }
-
+*/
 
 #call:hover,#appointment:hover{
-background-color: rgba(59, 59, 59,0.11);
+background-color: rgba(255, 255, 255,0.44);
 }
 
 #call,#appointment{

@@ -72,10 +72,10 @@
 
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
-                
+
             <div class="container">
-                   
-               <h2 class="display-4">Gestão das Redes Sociais</h2>
+
+                <h2 class="display-4">Gestão das Redes Sociais</h2>
                 <br>
                 <p>This is a template for a simple marketing or informational website. It includes a large callout called a
                     jumbotron and three supporting pieces of content. Use it as a starting point to create something more
@@ -83,9 +83,29 @@
                 </p>
                 <br>
                 <p>
+                    
                     <a class="btn btn-secondary btn-md" href="#" data-toggle="modal" data-target="#request_post" role="button">Sugerir Post</a>
                     <a class="btn btn-secondary btn-md" href="#" data-toggle="modal" data-target="#request_campaign" role="button"> Sugerir Campanha</a>
+                    
+                    <hr>
 
+                    <ul class="nav ">
+                            <li class="nav">
+                                <a class="nav  " href="https://instagram.com" target="_blank">
+                                    <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
+                                </a>
+                            </li>
+                            <li class="nav-social-media">
+                                <a class="nav" href="https://facebook.pt" target="_blank">
+                                    <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                </a>
+                            </li>
+                            <li class="nav-social-media">
+                                <a class="nav" href="https://google.pt" target="_blank">
+                                    <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                </a>
+                            </li>
+                        </ul>
                 </p>
             </div>
         </div>
@@ -255,7 +275,8 @@
                         </div>
                         <label for="description">Descrição:</label>
                         <div class="input-group mb-2">
-                            <textarea id="description" class="form-control" rows="4" cols="1" name="description" placeholder="Insira uma Descrição mais detalhada do post" required></textarea>
+                            <textarea id="description" class="form-control" rows="4" cols="1" name="description" placeholder="Insira uma Descrição mais detalhada do post"
+                                required></textarea>
                         </div>
                         <label for="description">Têm alguma imagem em mente? Envie-a</label>
                         <div class="input-group mb-2">
@@ -277,64 +298,66 @@
 
             <!-- Modal content-->
             <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Fazer Pedido de Campanha</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body ">
-                        <form>
-                            <label for="theme">Tema:</label>
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="fas fa-edit"></i>
-    
-                                    </span>
-                                </div>
-                                <input id="theme" type="text" name="theme" class="form-control" placeholder="Qual o âmbito da campanha" required autofocus>
-                            </div>
-                            <label for="offer">Valor do desconto</label>
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="fas fa-edit"></i>
-    
-                                    </span>
-                                </div>
-                                <input id="offer" type="text" name="theme" class="form-control" placeholder="Qual o valor do desconto oferecido?" required autofocus>
-                            </div>
-                            <div class="row">
-                                    <div class="col-12 col-sm-6">
-                                     <div class="form-group mb-2 p-0 m-0">
-                                      <label for="initDate">Data de início:</label>
-                                      <input class="form-control" id="initDate" type="date" name="date" required>
-                                      
-                                  
-                                  </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                 <div class="form-group mb-2 p-0 m-0">
-                                  <label for="endDate">Data de fim</label>
-                                  <input class="form-control" id="endDate" type="date" name="date" required>
-                                  
-                                </div>
-                                </div>
-                                </div>
-                            <label for="description">Descrição</label>
-                            <div class="input-group mb-2">
-                                <textarea id="description" class="form-control" rows="4" cols="1" name="description" placeholder="Descrição detalhada do que pretende da Campanha" required></textarea>
-                            </div>
-                            <label for="cost">Custo estimado:</label>
-                            <div class="input-group mb-2">
-                                <input id="cost" type="text" name="img" class="form-control" placeholder="Quanto pretende gastar em publicidade?">
-                            </div>
-    
-                            <hr>
-                            <button type="submit" class="btn btn-block btn-success mb-2">Fazer Pedido</button>
-                        </form>
-    
-                    </div>
+                <div class="modal-header">
+                    <h4 class="modal-title">Fazer Pedido de Campanha</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
+                <div class="modal-body ">
+                    <form>
+                        <label for="theme">Tema:</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-edit"></i>
+
+                                </span>
+                            </div>
+                            <input id="theme" type="text" name="theme" class="form-control" placeholder="Qual o âmbito da campanha" required autofocus>
+                        </div>
+                        <label for="offer">Valor do desconto</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-edit"></i>
+
+                                </span>
+                            </div>
+                            <input id="offer" type="text" name="theme" class="form-control" placeholder="Qual o valor do desconto oferecido?" required
+                                autofocus>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group mb-2 p-0 m-0">
+                                    <label for="initDate">Data de início:</label>
+                                    <input class="form-control" id="initDate" type="date" name="date" required>
+
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group mb-2 p-0 m-0">
+                                    <label for="endDate">Data de fim</label>
+                                    <input class="form-control" id="endDate" type="date" name="date" required>
+
+                                </div>
+                            </div>
+                        </div>
+                        <label for="description">Descrição</label>
+                        <div class="input-group mb-2">
+                            <textarea id="description" class="form-control" rows="4" cols="1" name="description" placeholder="Descrição detalhada do que pretende da Campanha"
+                                required></textarea>
+                        </div>
+                        <label for="cost">Custo estimado:</label>
+                        <div class="input-group mb-2">
+                            <input id="cost" type="text" name="img" class="form-control" placeholder="Quanto pretende gastar em publicidade?">
+                        </div>
+
+                        <hr>
+                        <button type="submit" class="btn btn-block btn-success mb-2">Fazer Pedido</button>
+                    </form>
+
+                </div>
+            </div>
         </div>
     </div>
 
