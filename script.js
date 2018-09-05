@@ -419,47 +419,22 @@ $(document).ready(function () {
   newDate.setDate(newDate.getDate());
   $('#Date').html(dayNames[newDate.getDay()] + ", " + newDate.getDate() + ' de ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
   var dt = new Date();
-  document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
 
-  $('.weather').weather({
-    
-      // language
-      lang: 'en',
-    
-      // city name
-      city: null,
-    
-      // 'C' or 'F'
-      tempUnit: 'C',
-    
-      // min length of autocomplete
-      autocompleteMinLength: 3,
-    
-      // shows description
-      displayDescription: true,
-    
-      // shows min/max temperature
-      displayMinMaxTemp: true,
-    
-      // shows wind
-      displayWind: false,
-    
-      // shows humidity
-      displayHumidity: false,
-    
-      // fix location
-      fixLocation: false,
-    
-      // API
-      url: 'http://api.openweathermap.org/data/2.5/forecast?appid=2de143494c0b295cca9337e1e96b00e0&cnt=1&units=metric'
-      
-    });
-
+  
 
 });
-
-
-
+/** 
+function getWeatherDemo() {
+  $.get('https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast ' +
+        'where woeid in (select woeid from geo.places(1) where text="Porto")&format=json', function (data) {
+      console.log(data);
+      alert("The temperatute in London is " +
+          data.query.results.channel.item.condition.temp +
+          data.query.results.channel.units.temperature
+      );
+  });
+}
+*/
 
 /** 
 $(document).ready(function () {
