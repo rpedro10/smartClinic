@@ -450,7 +450,7 @@ $(document).ready(function () {
         var ic= data.main.temp;
         ic-=272.15;
         ic= Math.round(ic);
-        document.getElementById("weather").innerHTML =ic +'°C ';
+        document.getElementById("weather").innerHTML = data.name + ', ' + ic +'°C ';
 
         var src='https://openweathermap.org/img/w/' + tempo +'.png';
         document.getElementById("temp-icon").src=src;
