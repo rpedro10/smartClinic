@@ -436,15 +436,33 @@ function getWeatherDemo() {
 }
 */
 
-/** 
+
 $(document).ready(function () {
-  $.getJSON('https://api.darksky.net/forecast/98912fd1b68be81fb1712612c0f803e0/41.08,8.36', function(forecast) {
-    
-                  console.log(forecast);
-                  
-                });            
+
+  var we = document.getElementById('weather');
+  if(weather!=null){
+    console.log("aqui");
+    $.get('http://api.openweathermap.org/data/2.5/weather?q=Lisboa,pt&appid=fd3e104e149005930241670a34b67079&lang=pt', function (data) {
+        console.log(data);
+        var tempo= data.weather[0].icon;
+        var desc= data.weather[0].description;
+        
+        var ic= data.main.temp;
+        ic-=272.15;
+        ic= Math.round(ic);
+        document.getElementById("weather").innerHTML =ic +'°C '+'<br>'+ desc ;
+
+        var src='http://openweathermap.org/img/w/' + tempo +'.png';
+        document.getElementById("temp-icon").src=src;
+        
+      });
+
+  }
+  
+  
+
 });
-*/
+
 /**
  * 
  *  

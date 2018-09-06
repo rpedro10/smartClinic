@@ -38,7 +38,7 @@
   <main role="main">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-8 col-xs-12 ">
           <div class="embed-responsive embed-responsive-4by3">
             <video controls muted autoplay id="myVideo">
               <source src="./img/video2.mp4" type="video/mp4"> Your browser does not support the video tag.
@@ -47,7 +47,7 @@
           </div>
 
         </div>
-        <div class="col-lg-4" style="padding-top:68px;">
+        <div class="col-lg-4 col-xs-12" style="padding-top:68px;">
           <div class="container" style="border-radius:8px;background-color:white;">
             <img class="img-fluid" src="./img/logo-clinica.png" alt="clinic-logo">
             <hr>
@@ -55,67 +55,27 @@
             <h5 id="Date"></h5>
 
             <h1 class="clock" id="txt"></h1>
-            <div class="weather">
-                <div class="container" hidden>
-                    <div class="jumbotron">
-                    </div>
-        
-                    <div id="forecast" class="row">
-                    </div>
-                </div>
-        
-              <script>
+            <img id="temp-icon" class="img" src="" alt="icon">
 
-                function getWeather() {
-                  var location = lisbon;
+            <p id="weather">
 
-                  $.get('https://query.yahooapis.com/v1/public/yql?q=select%20item.condition%20from%20weather.forecast%20where%20woeid%20%3D%202487889&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys', function (data) {
-                    /* Check that a place was found (we'll just grab the first) */
-                    if (data.query.results === null) {
-                      bootbox.alert("Location not found: " + location + "!");
-
-                    } else {
-                      $('.jumbotron').html('<h2>' + data.query.results.channel.item.title + '</h2>' +
-                        data.query.results.channel.item.description)
-                      $('.container').show();
-                    }
-
-                  });
-                }
-              </script>
-
-              <script src="https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='lisboa')&format=json&callback=callbackFunction"></script>
-            </div>
-            <hr>
-            <br>
-
-            <!-- weather widget start -->
-            <a target="_blank" href="http://ibooked.com.br/weather/porto-18312">
-              <img src="https://w.bookcdn.com/weather/picture/1_18312_1_8_137AE9_160_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=w209&anc_id=27744"
-                alt="booked.net" />
-            </a>
-            <!-- weather widget end -->
-            <br>
-            <br>
-            <hr>
+            </p>
 
           </div>
 
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="container" style="background-color: #4b707d;">
-          <h4 class="text-center" style="color:white;padding:5px;">Obrigado por escolher a Clínica Ferreira Borges! </h4>
 
         </div>
 
       </div>
-
     </div>
 
-    </div>
+    <div class="row">
+      <div class="container" style="background-color: #4b707d;">
+        <h4 class="text-center" style="color:white;padding:5px;">Obrigado por escolher a Clínica Ferreira Borges! </h4>
 
+      </div>
+
+    </div>
 
 
   </main>
