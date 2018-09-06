@@ -442,15 +442,15 @@ $(document).ready(function () {
   var we = document.getElementById('weather');
   if(weather!=null){
     console.log("aqui");
-    $.get('http://api.openweathermap.org/data/2.5/weather?q=Lisboa,pt&appid=fd3e104e149005930241670a34b67079&lang=pt', function (data) {
+    $.get('https://api.openweathermap.org/data/2.5/weather?q=Lisboa,pt&appid=fd3e104e149005930241670a34b67079&lang=pt', function (data) {
         console.log(data);
         var tempo= data.weather[0].icon;
-        var desc= data.weather[0].description;
+        //var desc= data.weather[0].description;
         
         var ic= data.main.temp;
         ic-=272.15;
         ic= Math.round(ic);
-        document.getElementById("weather").innerHTML =ic +'°C '+'<br>'+ desc ;
+        document.getElementById("weather").innerHTML =ic +'°C ';
 
         var src='https://openweathermap.org/img/w/' + tempo +'.png';
         document.getElementById("temp-icon").src=src;
