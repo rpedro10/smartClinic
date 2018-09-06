@@ -452,7 +452,7 @@ $(document).ready(function () {
         ic= Math.round(ic);
         document.getElementById("weather").innerHTML =ic +'°C '+'<br>'+ desc ;
 
-        var src='http://openweathermap.org/img/w/' + tempo +'.png';
+        var src='https://openweathermap.org/img/w/' + tempo +'.png';
         document.getElementById("temp-icon").src=src;
         
       });
