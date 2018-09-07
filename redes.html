@@ -52,13 +52,13 @@
 
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item0">
-                    <a id="vision" class="nav-link" href="userProfile.html"> O MEU PERFIL</a>
+                    <a id="profile" class="nav-link" href="userProfile.html"> O MEU PERFIL</a>
                 </li>
                 <li class="nav-item1">
-                    <a id="vision" class="nav-link" href="#"> REDES SOCIAIS</a>
+                    <a id="camps" class="nav-link" href="#"> REDES SOCIAIS</a>
                 </li>
                 <li class="nav-item2">
-                    <a id="network" class="nav-link" href="config.html">SMART TV </a>
+                    <a id="tv" class="nav-link" href="config.html">SMART TV </a>
 
                 </li>
                 <li class="nav-item3" id="nav-login">
@@ -68,9 +68,7 @@
         </div>
     </nav>
 
-    <main role="main">
-
-        <!-- Main jumbotron for a primary marketing message or call to action -->
+    <main class="main">
         <div class="jumbotron">
 
             <div class="container">
@@ -108,7 +106,6 @@
                                 </a>
                             </li>
                         </ul>
-                </p>
             </div>
         </div>
 
@@ -201,9 +198,12 @@
 
                 </div>
                 <div class="col-md-4">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item social-image" src="./img/video.mp4" allowfullscreen></iframe>
-                    </div>
+                        <div class="embed-responsive embed-responsive-16by9">
+                                <video controls >
+                                  <source src="./img/video2.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                </video>
+                              </div>
+                            </div>
                     <div class="container text-center">
                         <br>
                         <p>28/03/2018 - 31/10/2018
@@ -282,7 +282,7 @@
                         </div>
                         <label for="description">Têm alguma imagem em mente? Envie-a</label>
                         <div class="input-group mb-2">
-                            <input id="img" type="file" name="img" class="form-control" placeholder="Tema do post">
+                            <input id="img" type="file" name="img" class="form-control">
                         </div>
 
                         <hr>
@@ -314,7 +314,7 @@
 
                                 </span>
                             </div>
-                            <input id="theme" type="text" name="theme" class="form-control" placeholder="Qual o âmbito da campanha" required autofocus>
+                            <input id="theme" type="text" name="theme" class="form-control" placeholder="Qual o âmbito da campanha" required>
                         </div>
                         <label for="offer">Valor do desconto</label>
                         <div class="input-group mb-2">

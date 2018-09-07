@@ -378,8 +378,6 @@ function getClosestClinic(position) {
 $(document).ready(function () {
   var video = document.getElementById('myVideo');
   if (video != null) {
-    video.defaultMuted = true;
-
     document.getElementById('myVideo').addEventListener('ended', myHandler, false);
     function myHandler(e) {
       console.log("ended");
@@ -439,8 +437,8 @@ function getWeatherDemo() {
 
 $(document).ready(function () {
 
-  var we = document.getElementById('weather');
-  if(weather!=null){
+  if(document.getElementById('weather')!=null){
+    var we = document.getElementById('weather');    
     console.log("aqui");
     $.get('https://api.openweathermap.org/data/2.5/weather?q=Lisboa,pt&appid=fd3e104e149005930241670a34b67079&lang=pt', function (data) {
         console.log(data);
