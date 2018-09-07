@@ -386,7 +386,7 @@ $(document).ready(function () {
         // if selector matches multiple elements it will be called once for each
         var video = document.getElementById('myVideo');
         video.src = "./img/video.mp4"
-        $("#myVideo").fadeIn();
+        $("#myVideo").fadeIn('slow');
         
     });
     /** 
