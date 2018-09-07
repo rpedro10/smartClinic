@@ -381,9 +381,22 @@ $(document).ready(function () {
     document.getElementById('myVideo').addEventListener('ended', myHandler, false);
     function myHandler(e) {
       console.log("ended");
-
-      var video = document.getElementById('myVideo');
-      video.src = "./img/video.mp4"
+      $("#myVideo").fadeOut('slow', function() {
+        // will be called when the element finishes fading out
+        // if selector matches multiple elements it will be called once for each
+        var video = document.getElementById('myVideo');
+        video.src = "./img/video.mp4"
+        $("#myVideo").fadeIn();
+        
+    });
+    /** 
+      $("#myVideo").fadeOut();
+      $("#myVideo").promise().done(function(){
+        $("#myVideo").fadeOut();
+        */
+       
+     
+      
     }
 
   }
