@@ -453,7 +453,7 @@ $(document).ready(function () {
   if(document.getElementById('weather')!=null){
     var we = document.getElementById('weather');    
     console.log("aqui");
-    $.get('https://api.openweathermap.org/data/2.5/weather?q=Lisboa,pt&appid=fd3e104e149005930241670a34b67079&lang=pt', function (data) {
+    $.get('https://api.openweathermap.org/data/2.5/weather?q=Braga,pt&appid=fd3e104e149005930241670a34b67079&lang=pt', function (data) {
         console.log(data);
         var tempo= data.weather[0].icon;
         //var desc= data.weather[0].description;
