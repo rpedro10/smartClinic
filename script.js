@@ -8,7 +8,7 @@
 $(document).ready(function () { //scroll in the homepage
   // from: https://www.w3schools.com/bootstrap/bootstrap_ref_js_scrollspy.asp
   // Add scrollspy to <body>
-  $('body').scrollspy({ target: ".navbar", offset: 50 });
+  $('body').scrollspy({ target: ".navbar", offset: 0 });
 
   // Add smooth scrolling on all links inside the navbar
   $("#navbar a").on('click', function (event) {
@@ -279,7 +279,7 @@ function myMap() {
     content: contentString
   });
 
-  // Zoom to 11 when clicking on marker
+  // Zoom to 15 when clicking on marker
   google.maps.event.addListener(marker, 'click', function () {
     map.setZoom(15);
     map.setCenter(marker.getPosition());
