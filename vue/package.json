@@ -1,0 +1,23 @@
+{
+  "name": "smartclinic",
+  "version": "1.0.0",
+  "description": "app for dental clinics",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "dev": "nodemon server/app.js"
+  },
+  "author": "bright",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  }
+}

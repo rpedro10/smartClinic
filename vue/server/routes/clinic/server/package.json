@@ -1,0 +1,48 @@
+{
+  "name": "med-on-track-server",
+  "version": "0.0.0",
+  "author": "LDSO13",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "lint": "eslint .",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "~1.18.2",
+    "chai": "^4.1.2",
+    "connect-flash": "^0.1.1",
+    "connect-history-api-fallback": "^1.5.0",
+    "connect-mongo": "^2.0.0",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "express": "^4.15.5",
+    "express-session": "^1.15.6",
+    "jade": "~1.11.0",
+    "mocha": "^4.0.1",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.13.1",
+    "monk": "^4.1.0",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.12.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "serve-favicon": "~2.4.5",
+    "serve-static": "^1.13.1",
+    "sinon": "^4.0.2",
+    "supertest": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.2",
+    "eslint": "^4.10.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
