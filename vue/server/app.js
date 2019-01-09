@@ -21,7 +21,15 @@ var db = mongoose.connect(mongoURI, {useNewUrlParser : true})
 
 
 let index = require('./routes/index');
-
+const admin = require('./models/admin');
+/** 
+let ad = new admin({
+    username: 'rp',
+    password: '123',
+    email: 'email@'
+}); 
+ad.save();
+*/
 
 app.listen(port,()=> console.log('server started at port: ')+port);
 app.use('/api', index);

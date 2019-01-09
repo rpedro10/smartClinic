@@ -5,11 +5,8 @@ import Index from '@/components/Index'
 import Login from '@/components/Login'
 import Become from '@/components/Become'
 import Clinic from '@/components/Clinic'
-
-/** import Hello from '@/components/Hello'
-import About from '@/components/About'
-import NotFound from '@/components/NotFound'
-*/
+import Social from '@/components/Social'
+import Admin from '@/components/Admin'
 
 Vue.use(Router)
 
@@ -19,6 +16,8 @@ export default new Router({
     { path: '/', name: 'About', component: Become },
     { path: '/login', component: Login },
     { path: '/become', component: Index },
-    { path: '/clinic', component: Clinic }
+    { path: '/clinic', component: Clinic },
+    { path: '/admin', component: Admin },
+    { path: '/social', component: Social }
   ]
 })
